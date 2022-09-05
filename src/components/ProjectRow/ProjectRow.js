@@ -8,6 +8,12 @@ function ProjectRow({ project }) {
     <tr>
       <td>{name}</td>
       <td>{project.technology}</td>
+      <td>
+        <a href={project.demo}>Demo</a>
+      </td>
+      <td>
+        <a href={project.repo}>Repo</a>
+      </td>
     </tr>
   );
 }
