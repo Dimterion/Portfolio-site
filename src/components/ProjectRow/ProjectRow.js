@@ -9,10 +9,10 @@ function ProjectRow({ project }) {
       <td>{name}</td>
       <td>{project.technology}</td>
       <td>
-        <a href={project.demo}>Demo</a>
+        <a href={project.demo}>Demo link</a>
       </td>
       <td>
-        <a href={project.repo}>Repo</a>
+        <a href={project.repo}>Repo link</a>
       </td>
     </tr>
   );
