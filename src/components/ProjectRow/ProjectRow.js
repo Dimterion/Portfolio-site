@@ -1,6 +1,6 @@
 function ProjectRow({ project }) {
   const name = project.completed ? (
-    project.name
+    `${project.name} ✔`
   ) : (
     <span style={{ color: "red " }}>{project.name}</span>
   );

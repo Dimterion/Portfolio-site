@@ -38,7 +38,15 @@ function ProjectTable({ projects, filterText, completed }) {
           <th>Repo</th>
         </tr>
       </thead>
-      <tbody>{rows}</tbody>
+      <tbody>
+        {rows.length > 0 ? (
+          rows
+        ) : (
+          <tr>
+            <th colSpan="4">No results</th>
+          </tr>
+        )}
+      </tbody>
     </table>
   );
 }
