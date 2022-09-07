@@ -1,0 +1,9 @@
+.home-container {
+  text-align: center;
+}
+
+.image-container {
+  width: 90vw;
+  height: 50vh;
+  object-fit: cover;
+}

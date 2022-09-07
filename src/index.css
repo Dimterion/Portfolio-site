@@ -1,0 +1,10 @@
+:root {
+  font-family: "Inter", sans-serif;
+  --background: #ffe5d9;
+  --headerBackground: #d8e2dc;
+  --hoverColor: #6b9080;
+}
+
+body {
+  background-color: var(--background);
+}

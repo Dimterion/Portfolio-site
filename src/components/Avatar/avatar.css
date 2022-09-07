@@ -1,0 +1,80 @@
+.avatar-container {
+  background-color: #f5ebe0;
+  width: 90px;
+  height: 100px;
+  border-radius: 55% 55% 70% 70%;
+  margin: 0;
+  transition: 0.5s;
+}
+
+.avatar-container:hover {
+  transition: 0.5s;
+  opacity: 0.8;
+}
+
+.hair-container {
+  width: 80px;
+  height: 25px;
+  background-color: #d4a373;
+  position: relative;
+  top: -5px;
+  left: 10px;
+  border-radius: 50px 0 50px 0;
+}
+
+.eyes-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.right-eye {
+  width: 30px;
+  height: 20px;
+  background-color: #a9d6e5;
+  margin: 10px 0;
+  border: 5px solid #000;
+  border-radius: 5px;
+}
+
+.left-eye {
+  width: 30px;
+  height: 20px;
+  background-color: #a9d6e5;
+  margin: 10px 0;
+  border: 5px solid #000;
+  border-radius: 5px;
+}
+
+.glasses-line {
+  width: 10px;
+  height: 5px;
+  background-color: #000;
+  margin: 20px 0;
+}
+
+.nose-container {
+  width: 3px;
+  height: 8px;
+  background-color: #000;
+  position: relative;
+  top: -16px;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.mouth-container {
+  width: 20px;
+  height: 3px;
+  background-color: #000;
+  margin: -20px auto;
+  border-radius: 5px;
+}
+
+.beard-container {
+  width: 40px;
+  height: 30px;
+  background-color: #d4a373;
+  margin: -5px auto;
+  border-radius: 15px 15px 45px 45px;
+}

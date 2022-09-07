@@ -1,0 +1,30 @@
+.header-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  background-color: var(--headerBackground);
+  padding: 1vh 2vw;
+  border-radius: 5px;
+}
+
+.date-container {
+  text-align: center;
+  background-color: var(--headerBackground);
+  width: 350px;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 10px;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 762px) {
+  .header-container {
+    justify-content: center;
+  }
+
+  .date-container {
+    width: 200px;
+  }
+}
