@@ -1,0 +1,19 @@
+.search-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-end;
+  font-size: 0.9rem;
+}
+
+.search-form {
+  display: flex;
+  flex-flow: column nowrap;
+  width: fit-content;
+}
+
+.search-input {
+  background-color: var(--secondaryBackground);
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+}

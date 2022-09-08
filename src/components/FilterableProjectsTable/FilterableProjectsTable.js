@@ -8,7 +8,7 @@ function FilterableProjectsTable({ projects }) {
   const [completed, setCompleted] = useState(false);
 
   return (
-    <div>
+    <div className="projectsTable-container">
       <SearchBar
         filterText={filterText}
         completed={completed}

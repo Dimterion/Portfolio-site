@@ -1,3 +1,5 @@
+import "./searchBar.css";
+
 function SearchBar({
   filterText,
   completed,
@@ -5,9 +7,10 @@ function SearchBar({
   onCompletedChange,
 }) {
   return (
-    <>
-      <form>
+    <div className="search-container">
+      <form className="search-form">
         <input
+        className="search-input"
           type="text"
           value={filterText}
           placeholder="Search..."
@@ -19,12 +22,12 @@ function SearchBar({
             checked={completed}
             onChange={(e) => onCompletedChange(e.target.checked)}
           />{" "}
-          Only show completed projects
+          Show only completed projects
         </label>
       </form>
-      <p>✔ = completed</p>
+      <div>✔ = completed</div>
       <div style={{ color: "red" }}>red = in progress</div>
-    </>
+    </div>
   );
 }
 

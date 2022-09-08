@@ -1,6 +1,6 @@
 export const projects = [
   {
-    category: "Course projects",
+    category: "Courses projects",
     technology: "React",
     completed: true,
     name: "Employees HR records application",

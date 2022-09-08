@@ -19,7 +19,7 @@ function Home() {
         <Link className="link" to="/studies">
           courses
         </Link>{" "}
-        in the appropriate sections. Meanwhile take a look at some of the
+        in the appropriate sections. Meanwhile, take a look at some of the
         Normandy's beauties.
       </p>
     </div>

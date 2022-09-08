@@ -4,14 +4,14 @@
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  background-color: var(--headerBackground);
+  background-color: var(--secondaryBackground);
   padding: 1vh 2vw;
   border-radius: 5px;
 }
 
 .date-container {
   text-align: center;
-  background-color: var(--headerBackground);
+  background-color: var(--secondaryBackground);
   width: 350px;
   border-radius: 5px;
   margin: 10px auto;

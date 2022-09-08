@@ -1,10 +1,13 @@
 import FilterableProjectsTable from "../../components/FilterableProjectsTable/FilterableProjectsTable";
 import { projects } from "../../data/projects";
+import "./projects.css";
 
 function Projects() {
   return (
     <>
-      <h2>Here you can see a list of my projects</h2>
+      <h2 className="projectsPage-title">
+        Here you can see my projects
+      </h2>
       <FilterableProjectsTable projects={projects} />
     </>
   );

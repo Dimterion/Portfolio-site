@@ -5,8 +5,16 @@
   border-collapse: collapse;
 }
 
+thead > tr > th {
+  background-color: var(--secondaryBackground);
+}
+
+tbody > tr > th {
+  background-color: var(--tertiaryBackground);
+}
+
 th,
 td {
   border: 1px solid #000;
-  padding: 10px;
+  padding: 10px 5px;
 }
