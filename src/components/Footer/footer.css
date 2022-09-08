@@ -1,0 +1,13 @@
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  background: var(--headerBackground);
+  font-size: 2rem;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+}
+
+.footer-container > a {
+  margin: 0 5vw;
+}

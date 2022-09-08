@@ -4,7 +4,8 @@ import Header from "./components/Header/Header";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Projects from "./pages/Projects/Projects";
-import Courses from "./pages/Courses/Courses";
+import Studies from "./pages/Studies/Studies";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -14,8 +15,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="projects" element={<Projects />} />
-        <Route path="courses" element={<Courses />} />
+        <Route path="studies" element={<Studies />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

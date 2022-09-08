@@ -6,11 +6,11 @@ import "./header.css";
 function Header() {
   return (
     <>
-      <div className="header-container">
+      <header className="header-container">
         <Avatar />
-        <h1>Dimterion's portfolio</h1>
+        <h1>Dimterion's projects and studies</h1>
         <Navbar />
-      </div>
+      </header>
       <p className="date-container">Today is: {formatDate()}</p>
     </>
   );

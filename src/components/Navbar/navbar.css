@@ -8,13 +8,20 @@
   padding: 15px;
 }
 
-.navbar-container > a {
+.link {
   color: #000;
   margin: 5px auto;
+  transition: 0.5s;
 }
 
-.navbar-container > a:hover {
+.link:hover {
   color: var(--hoverColor);
+  transition: 0.5s;
+}
+
+.activeLink {
+  color: var(--hoverColor);
+  margin: 5px auto;
 }
 
 @media only screen and (max-width: 762px) {
