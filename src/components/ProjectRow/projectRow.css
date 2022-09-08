@@ -1,0 +1,5 @@
+@media only screen and (max-width: 762px) {
+  .projectRow {
+    font-size: 0.8rem;
+  }
+}

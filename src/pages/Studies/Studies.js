@@ -31,6 +31,10 @@ function Courses() {
 
   return (
     <div>
+      <h1>
+        WORK IN PROGRESS. But you can check the links at the bottom of the
+        page. Thanks!
+      </h1>
       <button onClick={handlePreviousClick}>Previous</button>
       <button onClick={handleNextClick}>Next</button>
       <h2>

@@ -1,3 +1,5 @@
+import "./projectRow.css";
+
 function ProjectRow({ project }) {
   const name = project.completed ? (
     `${project.name} ✔`
@@ -5,14 +7,22 @@ function ProjectRow({ project }) {
     <span style={{ color: "red " }}>{project.name}</span>
   );
   return (
-    <tr>
+    <tr className="projectRow">
       <td>{name}</td>
       <td>{project.technology}</td>
       <td>
-        <a href={project.demo}>Demo link</a>
+        {project.demo !== "" ? (
+          <a target="_blank" rel="noopener noreferrer" href={project.demo}>
+            Demo link
+          </a>
+        ) : (
+          <span>N/A</span>
+        )}
       </td>
       <td>
-        <a href={project.repo}>Repo link</a>
+        <a target="_blank" rel="noopener noreferrer" href={project.repo}>
+          Repo link
+        </a>
       </td>
     </tr>
   );
