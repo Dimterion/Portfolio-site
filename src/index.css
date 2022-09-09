@@ -1,5 +1,4 @@
 :root {
-  font-family: "Inter", sans-serif;
   --background: #f9f7f3;
   --secondaryBackground: #d8e2dc;
   --tertiaryBackground: #aec3b0;
@@ -7,6 +6,7 @@
 }
 
 body {
+  font-family: "Inter", sans-serif;
   background-color: var(--background);
   margin: 0 0 70px 0;
 }

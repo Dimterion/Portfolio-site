@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { courses } from "../../data/courses";
+import "./studies.css";
 
 function Courses() {
   const [index, setIndex] = useState(0);
@@ -30,24 +31,37 @@ function Courses() {
   }
 
   return (
-    <div>
-      <h1>
-        WORK IN PROGRESS. But you can check the links at the bottom of the
-        page. Thanks!
-      </h1>
-      <button onClick={handlePreviousClick}>Previous</button>
-      <button onClick={handleNextClick}>Next</button>
-      <h2>
-        <i>{course.platform}</i>
+    <div className="studiesPage-container">
+      <h2>Here you can see the courses I've completed</h2>
+      <button className="nav-btn" onClick={handlePreviousClick}>
+        <i className="fa-solid fa-angle-left"></i>
+      </button>
+      <button className="nav-btn" onClick={handleNextClick}>
+        <i className="fa-solid fa-angle-right"></i>
+      </button>
+      <h3>
+        <i>Platform: {course.platform}</i>
         <p>Course: {course.name}</p>
-      </h2>
+        <img className="course-image" src={course.image} alt={course.name} />
+      </h3>
+      <button className="details-btn" onClick={handleShowDetails}>
+        {showDetails ? "Hide" : "Show"} details
+      </button>
+      {showDetails && (
+        <div className="details-container">
+          <a
+            className="course-link"
+            href={course.link}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Link to the course
+          </a>
+        </div>
+      )}
       <h3>
         ({index + 1} of {courses.length})
       </h3>
-      <button onClick={handleShowDetails}>
-        {showDetails ? "Hide" : "Show"} details
-      </button>
-      {showDetails && <p>{course.link}</p>}
     </div>
   );
 }

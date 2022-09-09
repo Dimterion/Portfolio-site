@@ -1,0 +1,60 @@
+.studiesPage-container {
+  text-align: center;
+}
+
+.nav-btn {
+  background-color: var(--secondaryBackground);
+  padding: 5px 15px;
+  margin: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-btn:hover {
+  color: var(--hoverColor);
+  transition: 0.5s;
+  border: 2px solid var(--hoverColor);
+}
+
+.nav-btn > i {
+  font-size: 2rem;
+}
+
+.details-btn {
+  background-color: var(--secondaryBackground);
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 150px;
+}
+
+.details-btn:hover {
+  color: var(--hoverColor);
+  transition: 0.5s;
+  border: 2px solid var(--hoverColor);
+}
+
+.course-image {
+  object-fit: cover;
+  max-width: 250px;
+  max-height: 200px;
+  border-radius: 5px;
+}
+
+.details-container {
+  margin-top: 20px;
+}
+
+.course-link {
+  color: #000;
+  transition: 0.5s;
+}
+
+.course-link:hover {
+  color: var(--hoverColor);
+  transition: 0.5s;
+}
