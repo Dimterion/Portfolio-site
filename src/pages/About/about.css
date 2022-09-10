@@ -1,0 +1,22 @@
+.aboutPage-container {
+  text-align: center;
+}
+
+.aboutPage-container > h3 {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.aboutPage-image {
+  width: 90vw;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.aboutPage-list {
+  text-align: start;
+}
+
+.aboutPage-list > li {
+  margin: 10px;
+}
