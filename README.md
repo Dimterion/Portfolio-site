@@ -1,3 +1,11 @@
-# Portfolio site
+# A site to display various projects
 
-Work in progress
+This site is made to learn React using official documentation. It may change over time depending on the needs of further learning.
+
+## Link
+
+[Live Version](https://portfolio-site-dimterion.vercel.app/)
+
+## Built with
+
+React

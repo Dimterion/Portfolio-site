@@ -8,7 +8,8 @@
 }
 
 .aboutPage-image {
-  width: 90vw;
+  width: 80vw;
+  height: 60vh;
   object-fit: cover;
   border-radius: 5px;
 }
@@ -19,4 +20,11 @@
 
 .aboutPage-list > li {
   margin: 10px;
+}
+
+@media only screen and (max-width: 762px) {
+  .aboutPage-image {
+    width: 90vw;
+    height: 40vh;
+  }
 }
