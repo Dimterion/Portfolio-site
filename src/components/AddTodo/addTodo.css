@@ -1,0 +1,24 @@
+.addTodo-container {
+  border-bottom: 1px solid #000;
+}
+
+.addTodo-container > input {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+.addTodo-container > button {
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin: 15px;
+  padding: 5px;
+  background-color: var(--secondaryBackground);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.addTodo-container > button:hover {
+  background-color: var(--hoverColor);
+  transition: 0.5s;
+}

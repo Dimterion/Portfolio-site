@@ -1,0 +1,27 @@
+.edit-btn {
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin: 5px;
+  padding: 5px 15px;
+  background-color: var(--editColor);
+  color: var(--background);
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  box-shadow: 1px 1px 1px #000;
+}
+
+.delete-btn {
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: var(--alertColor);
+  color: var(--background);
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  box-shadow: 1px 1px 1px #000;
+}
