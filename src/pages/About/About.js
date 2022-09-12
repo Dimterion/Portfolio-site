@@ -48,7 +48,7 @@ function About() {
           </a>
         </li>
       </ul>
-      <i>Fan fact: avatar at the top left corner was made using CSS</i>
+      <i>Fun fact: avatar at the top left corner was made using CSS</i>
     </div>
   );
 }

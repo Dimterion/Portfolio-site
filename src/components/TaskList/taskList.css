@@ -12,6 +12,12 @@
   box-shadow: 1px 1px 1px #000;
 }
 
+.edit-btn:disabled {
+  opacity: 0.5;
+  cursor: auto;
+  box-shadow: none;
+}
+
 .delete-btn {
   border-radius: 5px;
   border: 1px solid #000;
@@ -24,4 +30,8 @@
 
 .delete-btn:hover {
   box-shadow: 1px 1px 1px #000;
+}
+
+.error-message {
+  font-size: 0.8rem;
 }

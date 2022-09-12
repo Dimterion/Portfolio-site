@@ -64,10 +64,10 @@
 }
 
 .mouth-container {
-  width: 20px;
+  width: 15px;
   height: 3px;
   background-color: #000;
-  margin: -20px auto;
+  margin: -25px auto;
   border-radius: 5px;
 }
 

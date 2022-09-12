@@ -30,14 +30,22 @@ function Task({ todo, onChange, onDelete }) {
             });
           }}
         />
-        <button className="edit-btn" onClick={() => setIsEditing(false)}>Save</button>
+        <button
+          className="edit-btn"
+          onClick={() => setIsEditing(false)}
+          disabled={todo.title.length === 0}
+        >
+          Save
+        </button>
       </>
     );
   } else {
     todoContent = (
       <>
         {todo.title}
-        <button className="edit-btn" onClick={() => setIsEditing(true)}>Edit</button>
+        <button className="edit-btn" onClick={() => setIsEditing(true)}>
+          Edit
+        </button>
       </>
     );
   }
@@ -55,7 +63,12 @@ function Task({ todo, onChange, onDelete }) {
         }}
       />
       {todoContent}
-      <button className="delete-btn" onClick={() => onDelete(todo.id)}>Delete</button>
+      <button className="delete-btn" onClick={() => onDelete(todo.id)}>
+        Delete
+      </button>
+      {todo.title.length === 0 && (
+        <p className="error-message">Task can't be empty.</p>
+      )}
     </label>
   );
 }

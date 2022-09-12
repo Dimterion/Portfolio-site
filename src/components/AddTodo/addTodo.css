@@ -22,3 +22,15 @@
   background-color: var(--hoverColor);
   transition: 0.5s;
 }
+
+.addTodo-container > button:disabled {
+  opacity: 0.5;
+  cursor: auto;
+  box-shadow: none;
+  color: #000;
+  background-color: var(--secondaryBackground);
+}
+
+.addTodo-container > span {
+  font-size: 0.8rem;
+}

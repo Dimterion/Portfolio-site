@@ -16,9 +16,11 @@ function AddTodo({ onAddTodo }) {
           setTitle("");
           onAddTodo(title);
         }}
+        disabled={title.length === 0}
       >
         Add task
       </button>
+      {title.length === 0 && <span>Type a task to add.</span>}
     </div>
   );
 }
