@@ -1,3 +1,15 @@
 .projectsPage-title {
   text-align: center;
 }
+
+.misc-container {
+  margin: 10px;
+}
+
+.misc-container > p > a {
+  color: #000;
+}
+
+.misc-container > p > a:hover {
+  color: var(--hoverColor);
+}

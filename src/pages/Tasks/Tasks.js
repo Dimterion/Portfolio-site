@@ -40,7 +40,7 @@ function Tasks() {
 
   return (
     <>
-      <h2 className="tasks-header">Here is a simple To Do list</h2>
+      <h2 className="tasks-header">Here is a simple To Do app</h2>
       <div className="tasks-container">
         <AddTodo onAddTodo={handleAddTodo} />
         <TaskList
