@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Quiz from "../../components/Quiz/Quiz";
 import image from "../../assets/image_sea.jpg";
 import "./home.css";
 
@@ -22,6 +23,7 @@ function Home() {
         in the appropriate sections. Meanwhile, take a look at some of the
         Normandy's beauties.
       </p>
+      <Quiz />
     </div>
   );
 }
