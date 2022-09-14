@@ -1,13 +1,27 @@
+import { useState } from "react";
 import "./projectRow.css";
 
 function ProjectRow({ project }) {
+  const [isActive, setIsActive] = useState(false);
+
+  let rowClassname = "projectRow";
+
+  if (isActive) {
+    rowClassname += " projectRow-active";
+  }
+
   const name = project.completed ? (
     `${project.name} ✔`
   ) : (
     <span style={{ color: "red " }}>{project.name}</span>
   );
   return (
-    <tr className="projectRow">
+    <tr
+      className={rowClassname}
+      onClick={(e) => {
+        setIsActive(!isActive);
+      }}
+    >
       <td>{name}</td>
       <td>{project.technology}</td>
       <td>

@@ -1,3 +1,12 @@
+.projectRow:hover {
+  background-color: var(--secondaryBackground);
+  transition: 0.5s;
+}
+
+.projectRow-active {
+  background-color: var(--secondaryBackground);
+}
+
 .projectRow > td > a {
   color: #000;
 }
