@@ -1,0 +1,55 @@
+.form-image {
+  width: 80vw;
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.image-container {
+  position: relative;
+  text-align: center;
+  color: var(--background);
+}
+
+.firstPhrase {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.secondPhrase {
+  position: absolute;
+  top: 93%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.form-container > label > input {
+  margin: 10px auto;
+  border-radius: 5px;
+  border: 1px solid #000;
+  padding: 5px;
+  background-color: var(--secondaryBackground);
+}
+
+.editPhrase-btn {
+  padding: 5px;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: 1px solid #000;
+  cursor: pointer;
+  background-color: var(--tertiaryBackground);
+  transition: 0.5s;
+}
+
+.editPhrase-btn:hover {
+  background-color: var(--hoverColor);
+  transition: 0.5s;
+}
