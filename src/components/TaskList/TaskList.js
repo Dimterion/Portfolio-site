@@ -3,13 +3,18 @@ import "./taskList.css";
 
 function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
   return (
-    <ol>
-      {todos.map((todo) => (
-        <li key={todo.id}>
-          <Task todo={todo} onChange={onChangeTodo} onDelete={onDeleteTodo} />
-        </li>
-      ))}
-    </ol>
+    <>
+      <h4>
+        You have {todos.length} {todos.length === 1 ? "task" : "tasks"}
+      </h4>
+      <ol>
+        {todos.map((todo) => (
+          <li key={todo.id}>
+            <Task todo={todo} onChange={onChangeTodo} onDelete={onDeleteTodo} />
+          </li>
+        ))}
+      </ol>
+    </>
   );
 }
 
