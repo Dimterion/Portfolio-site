@@ -2,11 +2,25 @@ import { useState } from "react";
 import "./taskList.css";
 
 function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
+  let completedTasks = 0;
+  todos.map((todo) => {
+    if (todo.done) {
+      completedTasks = completedTasks + 1;
+    }
+    return completedTasks;
+  });
+
   return (
     <>
-      <h4>
-        You have {todos.length} {todos.length === 1 ? "task" : "tasks"}
-      </h4>
+      {todos.length === 0 ? (
+        <h4>You have no tasks</h4>
+      ) : (
+        <h4>
+          You have {completedTasks} completed{" "}
+          {completedTasks === 1 ? "task" : "tasks"} out of {todos.length}{" "}
+          {todos.length === 1 ? "task" : "tasks"} in total
+        </h4>
+      )}
       <ol>
         {todos.map((todo) => (
           <li key={todo.id}>
