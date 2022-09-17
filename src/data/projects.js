@@ -2,7 +2,7 @@ export const projects = [
   // Courses projects (OpenClassrooms)
   {
     category: "Courses projects (OpenClassrooms)",
-    technology: "React / Netlify",
+    technology: "React, Netlify",
     completed: true,
     name: "Employees HR records application",
     demo: "https://vocal-moxie-dc80c3.netlify.app/",
@@ -10,7 +10,7 @@ export const projects = [
   },
   {
     category: "Courses projects (OpenClassrooms)",
-    technology: "React / Redux",
+    technology: "React, Redux",
     completed: true,
     name: "Commercial bank website",
     demo: "",
@@ -34,7 +34,7 @@ export const projects = [
   },
   {
     category: "Courses projects (OpenClassrooms)",
-    technology: "Figma / Notion",
+    technology: "Figma, Notion",
     completed: true,
     name: "Tutoring application design",
     demo: "",
@@ -50,7 +50,7 @@ export const projects = [
   },
   {
     category: "Courses projects (OpenClassrooms)",
-    technology: "HTML / JavaScript / Bootstrap / SASS",
+    technology: "HTML, JavaScript, Bootstrap, SASS",
     completed: true,
     name: "Recipes search engine",
     demo: "https://dimterion.github.io/Recipes-search-engine/",
@@ -58,7 +58,7 @@ export const projects = [
   },
   {
     category: "Courses projects (OpenClassrooms)",
-    technology: "HTML / CSS / JavaScript",
+    technology: "HTML, CSS, JavaScript",
     completed: true,
     name: "Photography website",
     demo: "https://dimterion.github.io/Photographers-sourcing-platform-website/",
@@ -66,7 +66,7 @@ export const projects = [
   },
   {
     category: "Courses projects (OpenClassrooms)",
-    technology: "HTML / CSS / JavaScript",
+    technology: "HTML, CSS, JavaScript",
     completed: true,
     name: "Gaming event registration website",
     demo: "https://dimterion.github.io/Gaming-events-company-registration-landing-page/",
@@ -74,7 +74,7 @@ export const projects = [
   },
   {
     category: "Courses projects (OpenClassrooms)",
-    technology: "HTML / SASS / JavaScript",
+    technology: "HTML, SASS, JavaScript",
     completed: true,
     name: "Food ordering company website",
     demo: "https://dimterion.github.io/Food-ordering-company-website/",
@@ -82,7 +82,7 @@ export const projects = [
   },
   {
     category: "Courses projects (OpenClassrooms)",
-    technology: "HTML / CSS",
+    technology: "HTML, CSS",
     completed: true,
     name: "Hotels website landing page",
     demo: "https://dimterion.github.io/Accommodation-and-activities-website-landing-page/",
@@ -91,7 +91,7 @@ export const projects = [
   // Courses projects (Udemy)
   {
     category: "Courses projects (Udemy)",
-    technology: "React / MongoDB / Heroku",
+    technology: "React, MongoDB, Heroku",
     completed: true,
     name: "Support desk application",
     demo: "https://udemyreactcoursesupportdesk.herokuapp.com/",
@@ -99,7 +99,7 @@ export const projects = [
   },
   {
     category: "Courses projects (Udemy)",
-    technology: "React / Netlify",
+    technology: "React, Netlify",
     completed: true,
     name: "Feedback application",
     demo: "https://snazzy-marshmallow-35d4a9.netlify.app/",
@@ -107,7 +107,7 @@ export const projects = [
   },
   {
     category: "Courses projects (Udemy)",
-    technology: "React / Tailwind CSS / daisyUI / Vercel",
+    technology: "React, Tailwind CSS, daisyUI, Vercel",
     completed: true,
     name: "GitHub finder application",
     demo: "https://github-finder-chi-ten.vercel.app/",
@@ -115,7 +115,7 @@ export const projects = [
   },
   {
     category: "Courses projects (Udemy)",
-    technology: "React / Firebase / Firestore",
+    technology: "React, Firebase, Firestore",
     completed: true,
     name: "House Marketplace",
     demo: "",
@@ -132,7 +132,7 @@ export const projects = [
   },
   {
     category: "Courses projects (Scrimba)",
-    technology: "HTML / CSS / JavaScript",
+    technology: "HTML, CSS, JavaScript",
     completed: true,
     name: "Page for the Scrimba projects on HTML / CSS / JavaScript",
     demo: "https://dimterion.github.io/Projects-summary-page/",
@@ -141,7 +141,7 @@ export const projects = [
   // Codecademy projects
   {
     category: "Courses projects (Codecademy)",
-    technology: "HTML / CSS ",
+    technology: "HTML, CSS ",
     completed: true,
     name: "Excursion website landing page",
     demo: "https://dimterion.github.io/Excursion-website-landing-page/",
@@ -149,7 +149,7 @@ export const projects = [
   },
   {
     category: "Courses projects (Codecademy)",
-    technology: "HTML / CSS ",
+    technology: "HTML, CSS ",
     completed: true,
     name: "Tea store landing page",
     demo: "https://dimterion.github.io/Tea-store-landing-page/",
@@ -161,7 +161,7 @@ export const projects = [
     technology: "React",
     completed: false,
     name: "Portfolio website",
-    demo: "",
+    demo: "https://portfolio-site-dimterion.vercel.app/",
     repo: "https://github.com/Dimterion/Portfolio-site",
   },
   {
@@ -190,7 +190,7 @@ export const projects = [
   },
   {
     category: "Personal projects",
-    technology: "HTML / CSS / JavaScript",
+    technology: "HTML, CSS, JavaScript",
     completed: true,
     name: "Interactive text adventure game",
     demo: "https://dimterion.github.io/Interactive-text-adventure-game/",

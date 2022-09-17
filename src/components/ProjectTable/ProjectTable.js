@@ -7,7 +7,10 @@ function ProjectTable({ projects, filterText, completed }) {
   let lastCategory = null;
 
   projects.forEach((project) => {
-    if (project.name.toLowerCase().indexOf(filterText.toLowerCase()) === -1) {
+    if (
+      project.name.toLowerCase().indexOf(filterText.toLowerCase()) === -1 &&
+      project.technology.toLowerCase().indexOf(filterText.toLowerCase()) === -1
+    ) {
       return;
     }
 

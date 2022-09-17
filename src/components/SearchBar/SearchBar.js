@@ -10,10 +10,10 @@ function SearchBar({
     <div className="search-container">
       <form className="search-form">
         <input
-        className="search-input"
+          className="search-input"
           type="text"
           value={filterText}
-          placeholder="Search by name"
+          placeholder="Search by name or technology"
           onChange={(e) => onFilterTextChange(e.target.value)}
         />
         <label>
