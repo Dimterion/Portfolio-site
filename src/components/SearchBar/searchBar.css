@@ -17,3 +17,15 @@
   border-radius: 5px;
   padding: 5px;
 }
+
+.search-checkbox {
+  cursor: pointer;
+}
+
+.search-checkbox > input {
+  cursor: pointer;
+}
+
+.search-checkbox:hover {
+  text-shadow: 1px 1px 1px var(--secondaryBackground);
+}

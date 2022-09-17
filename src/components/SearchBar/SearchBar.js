@@ -16,7 +16,7 @@ function SearchBar({
           placeholder="Search by name or technology"
           onChange={(e) => onFilterTextChange(e.target.value)}
         />
-        <label>
+        <label className="search-checkbox">
           <input
             type="checkbox"
             checked={completed}
