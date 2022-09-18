@@ -4,12 +4,8 @@ import "./form.css";
 
 function Form() {
   const [isEditing, setIsEditing] = useState(false);
-  const [firstPart, setFirstPart] = useState(
-    "Normandy again."
-  );
-  const [secondPart, setSecondPart] = useState(
-    "Because it's gorgeous."
-  );
+  const [firstPart, setFirstPart] = useState("Normandy again.");
+  const [secondPart, setSecondPart] = useState("Because it's gorgeous.");
 
   return (
     <div>
@@ -22,7 +18,8 @@ function Form() {
         <i className="firstPhrase">{firstPart}</i>
         <i className="secondPhrase">{secondPart}</i>
       </div>
-      <form className="form-container"
+      <form
+        className="form-container"
         onSubmit={(e) => {
           e.preventDefault();
           setIsEditing(!isEditing);
@@ -48,7 +45,19 @@ function Form() {
             />
           )}
         </label>
-        <button className="editPhrase-btn" type="submit">{isEditing ? "Save" : "Edit"} phrase</button>
+        <button className="editPhrase-btn" type="submit">
+          {isEditing ? "Save" : "Edit"} text
+        </button>
+        <button
+          className="clearPhrase-btn"
+          onClick={(e) => {
+            e.preventDefault();
+            setFirstPart("");
+            setSecondPart("");
+          }}
+        >
+          Clear text
+        </button>
       </form>
     </div>
   );

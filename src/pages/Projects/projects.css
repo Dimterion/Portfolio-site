@@ -13,3 +13,15 @@
 .misc-container > p > a:hover {
   color: var(--hoverColor);
 }
+
+.toggleImg-btn {
+  background-color: var(--tertiaryBackground);
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.toggleImg-btn:hover {
+  box-shadow: 1px 1px 1px #000;
+}

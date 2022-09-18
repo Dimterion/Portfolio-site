@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import FilterableProjectsTable from "../../components/FilterableProjectsTable/FilterableProjectsTable";
 import Form from "../../components/Form/Form";
@@ -5,6 +6,12 @@ import { projects } from "../../data/projects";
 import "./projects.css";
 
 function Projects() {
+  const [imgActive, setImgActive] = useState(false);
+
+  function handleImgToggle() {
+    setImgActive(!imgActive);
+  }
+
   return (
     <>
       <h2 className="projectsPage-title">Here you can see my projects</h2>
@@ -18,11 +25,19 @@ function Projects() {
           There's also a simple To Do app which can be seen{" "}
           <Link to="/tasks">here</Link>.
         </p>
-        <p>
-          And here is a image over which you can put some text using the{" "}
-          <b>Edit phrase</b> button below it.
-        </p>
-        <Form />
+        <p>And here is a simple form to add some text over the image (click the button to open it).</p>
+        <button className="toggleImg-btn" onClick={handleImgToggle}>
+          {!imgActive ? "Open" : "Close"}
+        </button>
+        {imgActive && (
+          <>
+            <p>
+              You can put some text on the image using the{" "}
+              <b>Edit text</b> button below it.
+            </p>
+            <Form />
+          </>
+        )}
       </div>
     </>
   );
