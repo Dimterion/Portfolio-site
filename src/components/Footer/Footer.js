@@ -27,6 +27,9 @@ function Footer() {
       >
         <i className="fa-brands fa-medium"></i>
       </a>
+      <a className="link" href="#top">
+        <i className="fa-solid fa-angles-up"></i>
+      </a>
     </footer>
   );
 }

@@ -5,6 +5,7 @@
 
 .homePage-image {
   width: 90vw;
+  max-width: 1500px;
   height: 50vh;
   object-fit: cover;
   border-radius: 5px;

@@ -28,7 +28,8 @@
 
 .quiz-image {
   width: 90vw;
-  height: 50vh;
+  max-width: 1000px;
+  height: 60vh;
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 20px;
