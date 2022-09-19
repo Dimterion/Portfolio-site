@@ -69,3 +69,15 @@
   background-color: var(--hoverColor);
   transition: 0.5s;
 }
+
+.nextImg-btn {
+  background-color: var(--tertiaryBackground);
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.nextImg-btn:hover {
+  box-shadow: 1px 1px 1px #000;
+}

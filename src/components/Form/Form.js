@@ -1,14 +1,32 @@
 import { useState } from "react";
-import image from "../../assets/image_horizon.jpg";
+import { images } from "../../data/images";
 import "./form.css";
 
 function Form() {
   const [isEditing, setIsEditing] = useState(false);
   const [firstPart, setFirstPart] = useState("Normandy again.");
   const [secondPart, setSecondPart] = useState("Because it's gorgeous.");
+  const [index, setIndex] = useState(0);
+
+  const hasNext = index < images.length - 1;
+  let image = images[index].src;
+
+  function handleClick() {
+    if (hasNext) {
+      setIndex(index + 1);
+    } else {
+      setIndex(0);
+    }
+  }
 
   return (
     <div>
+      <button className="nextImg-btn" onClick={handleClick}>
+        Change image
+      </button>
+      <p>
+        Image {index + 1} out of {images.length}
+      </p>
       <div className="image-container">
         <img
           className="form-image"
