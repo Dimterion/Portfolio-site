@@ -8,3 +8,17 @@
   border: 1px solid #000;
   border-radius: 5px;
 }
+
+.tasks-additionalText {
+  margin: 25px 10px;
+}
+
+.tasks-additionalText > a {
+  color: #000;
+  transition: 0.5s;
+}
+
+.tasks-additionalText > a:hover {
+  color: var(--hoverColor);
+  transition: 0.5s;
+}

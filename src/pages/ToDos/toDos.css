@@ -1,0 +1,13 @@
+.toDo-container {
+  margin: 10px;
+}
+
+.linkToDo {
+  color: #000;
+  transition: 0.5s;
+}
+
+.linkToDo:hover {
+  color: var(--hoverColor);
+  transition: 0.5s;
+}

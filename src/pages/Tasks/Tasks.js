@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import AddTodo from "../../components/AddTodo/AddTodo";
 import TaskList from "../../components/TaskList/TaskList";
 import "./tasks.css";
@@ -49,6 +50,18 @@ function Tasks() {
           onDeleteTodo={handleDeleteTodo}
         />
       </div>
+      <p className="tasks-additionalText">
+        And <Link to="/todos">here</Link> you can see the same app but this time
+        it is made using{" "}
+        <a
+          href="https://beta.reactjs.org/learn/extracting-state-logic-into-a-reducer"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Reducer
+        </a>
+        .
+      </p>
     </>
   );
 }

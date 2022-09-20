@@ -1,6 +1,6 @@
 import Avatar from "../Avatar/Avatar";
 import Navbar from "../Navbar/Navbar";
-import { formatDate } from "../../utils/utils";
+import { formatDate } from "../../utils/formatDate";
 import "./header.css";
 
 function Header() {
