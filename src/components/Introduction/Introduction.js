@@ -1,7 +1,6 @@
 import Section from "../Section/Section";
 import Heading from "../Heading/Heading";
 import SubHeading from "../SubHeading/SubHeading";
-import AdditionalInfo from "../AdditionalInfo/AdditionalInfo";
 
 function Introduction() {
   return (
@@ -11,7 +10,6 @@ function Introduction() {
         title="I live in France and learn Web Development focusing on Front-End (with some bits of Back-End)."
         body="This small site was made in order to learn React using its oficial documentation. I'm mostly focusing on testing some of the techniques rather than making everything ideal."
       />
-      <AdditionalInfo />
     </Section>
   );
 }

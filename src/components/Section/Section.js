@@ -1,9 +1,16 @@
-import React from 'react'
+import { useContext } from "react";
+import { AboutPageContext } from "../../context/AboutPageContext";
 
-function Section() {
+function Section({ children }) {
+  const level = useContext(AboutPageContext);
+
   return (
-    <div>Section</div>
-  )
+    <section>
+      <AboutPageContext.Provider value={level + 1}>
+        {children}
+      </AboutPageContext.Provider>
+    </section>
+  );
 }
 
-export default Section
+export default Section;

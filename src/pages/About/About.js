@@ -1,3 +1,4 @@
+import Introduction from "../../components/Introduction/Introduction";
 import image from "../../assets/image_park.jpg";
 import "./about.css";
 
@@ -5,16 +6,7 @@ function About() {
   return (
     <div className="aboutPage-container">
       <img className="aboutPage-image" src={image} alt="Park in Paris" />
-      <h2>Hi! I'm Dmitrii</h2>
-      <p>
-        I live in France and learn Web Development focusing on Front-End (with
-        some bits of Back-End).
-      </p>
-      <p>
-        This small site was made in order to learn React using its oficial
-        documentation. I'm mostly focusing on testing some of the techniques
-        rather than making everything ideal.
-      </p>
+      <Introduction />
       <h3>Contact links</h3>
       <ul className="aboutPage-list">
         <li>
@@ -49,6 +41,19 @@ function About() {
         </li>
       </ul>
       <i>Fun fact: avatar at the top left corner was made using CSS</i>
+      <br></br>
+      <br></br>
+      <i>
+        Another fun fact: the paragraph with description above was made using{" "}
+        <a
+          className="link"
+          href="https://beta.reactjs.org/learn/passing-data-deeply-with-context"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          React Context
+        </a>
+      </i>
     </div>
   );
 }

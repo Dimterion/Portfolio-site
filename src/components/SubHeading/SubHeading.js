@@ -1,9 +1,13 @@
-import React from 'react'
+import Section from "../Section/Section";
+import Heading from "../Heading/Heading";
 
-function SubHeading() {
+function SubHeading({ title, body }) {
   return (
-    <div>SubHeading</div>
-  )
+    <Section>
+      <Heading>{title}</Heading>
+      <p>{body}</p>
+    </Section>
+  );
 }
 
-export default SubHeading
+export default SubHeading;
