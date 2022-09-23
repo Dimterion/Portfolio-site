@@ -51,14 +51,26 @@ function Tasks() {
         />
       </div>
       <p className="tasks-additionalText">
-        And <Link to="/todos">here</Link> you can see the same app but this time
-        it is made using{" "}
+        <Link to="/todos">Here</Link> you can see the same app but this time it
+        is made using{" "}
         <a
           href="https://beta.reactjs.org/learn/extracting-state-logic-into-a-reducer"
           target="_blank"
           rel="noopener noreferrer"
         >
           Reducer
+        </a>
+        .
+      </p>
+      <p className="tasks-additionalText">
+        And <Link to="/tasks-combined">here</Link> you can see a similar app
+        made using a combination of{" "}
+        <a
+          href="https://beta.reactjs.org/learn/scaling-up-with-reducer-and-context"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Reducer and Context
         </a>
         .
       </p>
