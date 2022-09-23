@@ -1,6 +1,6 @@
 # A site to display various projects
 
-This site is made to learn React using official documentation. It may change over time depending on the needs of further learning.
+This site is made to learn React using [official documentation](https://beta.reactjs.org/). It may change over time depending on the needs of further learning.
 
 ## Link
 
