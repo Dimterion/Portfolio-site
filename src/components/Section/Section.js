@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { AboutPageContext } from "../../context/AboutPageContext";
+import { AboutPageContext } from "../../context/AboutPageContext.js";
 
 function Section({ children }) {
   const level = useContext(AboutPageContext);
