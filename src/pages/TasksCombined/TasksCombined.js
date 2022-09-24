@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import AddTask from "../../components/AddTaskCombined/AddTaskCombined";
 import TaskList from "../../components/TaskListCombined/TaskListCombined";
-import { TasksProvider } from "../../context/TasksContextReducer";
+import { TasksProvider } from "../../context/Context";
 
 export default function TaskApp() {
   return (

@@ -1,7 +1,7 @@
 import { useReducer } from "react";
 import AddTodo from "../AddTodo/AddTodo";
 import TaskList from "../TaskList/TaskList";
-import tasksReducer from "../../reducers/tasksReducer";
+import reducer from "../../reducers/reducer";
 import "./toDoWithReducer.css";
 
 let nextId = 1;
@@ -10,7 +10,7 @@ const initialTodos = [
 ];
 
 function ToDoWithReducer() {
-  const [todos, dispatch] = useReducer(tasksReducer, initialTodos);
+  const [todos, dispatch] = useReducer(reducer, initialTodos);
 
   function handleAddToDo(title) {
     dispatch({

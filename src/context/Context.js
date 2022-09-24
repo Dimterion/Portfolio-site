@@ -1,5 +1,7 @@
 import { createContext, useContext, useReducer } from "react";
 
+export const AboutPageContext = createContext(0);
+
 const TasksContext = createContext(null);
 const TasksDispatchContext = createContext(null);
 

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useTasks, useTasksDispatch } from "../../context/TasksContextReducer";
+import { useTasks, useTasksDispatch } from "../../context/Context";
 
 export default function TaskList() {
   const tasks = useTasks();
