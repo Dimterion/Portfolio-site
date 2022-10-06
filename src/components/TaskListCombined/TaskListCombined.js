@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTasks, useTasksDispatch } from "../../context/Context";
+import "./taskListCombined.css";
 
 export default function TaskList() {
   const tasks = useTasks();
@@ -33,7 +34,12 @@ function Task({ task }) {
             });
           }}
         />
-        <button onClick={() => setIsEditing(false)}>Save</button>
+        <button
+          onClick={() => setIsEditing(false)}
+          disabled={task.text.length === 0}
+        >
+          Save
+        </button>
       </>
     );
   } else {
@@ -45,7 +51,7 @@ function Task({ task }) {
     );
   }
   return (
-    <label>
+    <label className="taskListCombined-label">
       <input
         type="checkbox"
         checked={task.done}
@@ -70,6 +76,7 @@ function Task({ task }) {
       >
         Delete
       </button>
+      {task.text.length === 0 && <p>Task can't be empty.</p>}
     </label>
   );
 }

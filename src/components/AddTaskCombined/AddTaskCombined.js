@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useTasksDispatch } from "../../context/Context";
+import "./addTaskCombined.css";
 
 export default function AddTask({ onAddTask }) {
   const [text, setText] = useState("");
@@ -7,11 +8,13 @@ export default function AddTask({ onAddTask }) {
   return (
     <>
       <input
+        className="addTaskCombined-input"
         placeholder="Add task"
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
       <button
+        className="addTaskCombined-btn"
         onClick={() => {
           setText("");
           dispatch({
@@ -20,9 +23,11 @@ export default function AddTask({ onAddTask }) {
             text: text,
           });
         }}
+        disabled={text.length === 0}
       >
         Add
       </button>
+      {text.length === 0 && <span>Type a task to add.</span>}
     </>
   );
 }
