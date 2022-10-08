@@ -158,6 +158,14 @@ export const projects = [
   // Personal projects
   {
     category: "Personal projects",
+    technology: "HTML, CSS, JavaScript",
+    completed: true,
+    name: "GitHub profile landing page",
+    demo: "https://dimterion.github.io/",
+    repo: "https://github.com/Dimterion/dimterion.github.io",
+  },
+  {
+    category: "Personal projects",
     technology: "React",
     completed: true,
     name: "How to start Create React App",
@@ -187,6 +195,14 @@ export const projects = [
     name: "Portfolio website",
     demo: "https://portfolio-site-dimterion.vercel.app/",
     repo: "https://github.com/Dimterion/Portfolio-site",
+  },
+  {
+    category: "Personal projects",
+    technology: "HTML, CSS, JavaScript",
+    completed: false,
+    name: "Code sandbox",
+    demo: "https://dimterion.github.io/Basic-html-css-js-app",
+    repo: "https://github.com/Dimterion/Basic-html-css-js-app",
   },
   {
     category: "Personal projects",
