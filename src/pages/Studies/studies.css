@@ -49,9 +49,15 @@
   margin-top: 20px;
 }
 
+.links-container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
 .course-link {
   color: #000;
   transition: 0.5s;
+  margin: 1vh 0;
 }
 
 .course-link:hover {

@@ -49,14 +49,25 @@ function Courses() {
       </button>
       {showDetails && (
         <div className="details-container">
-          <a
-            className="course-link"
-            href={course.link}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Link to the course
-          </a>
+          <p>{course.info}</p>
+          <div className="links-container">
+            <a
+              className="course-link"
+              href={course.projectsLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Link to the projects
+            </a>
+            <a
+              className="course-link"
+              href={course.courseLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Link to the platform
+            </a>
+          </div>
         </div>
       )}
       <h3>

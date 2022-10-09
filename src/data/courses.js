@@ -6,26 +6,37 @@ import codecademyCoursesLogo from "../assets/codecademy_courses_logo.PNG";
 export const courses = [
   {
     platform: "OpenClassrooms",
-    name: "Front-End Developement",
-    link: "https://openclassrooms.com/paths/517-javascript-react-developer",
+    name: "JavaScript React Developer",
+    courseLink:
+      "https://openclassrooms.com/paths/517-javascript-react-developer",
+    projectsLink:
+      "https://github.com/stars/Dimterion/lists/openclassrooms-projects",
     image: osCourseLogo,
+    info: "12 months Bachelor's-level program / 11 projects",
   },
   {
     platform: "Udemy",
     name: "React. Front to Back",
-    link: "https://www.udemy.com/course/react-front-to-back-2022",
+    courseLink: "https://www.udemy.com/course/react-front-to-back-2022",
+    projectsLink: "https://github.com/stars/Dimterion/lists/udemy-projects",
     image: udemyCourseLogo,
+    info: "20 hours course / 4 projects",
   },
   {
     platform: "Scrimba",
-    name: "React / JS / CSS / HTML",
-    link: "https://scrimba.com/allcourses",
+    name: "React / JavaScript / CSS / HTML",
+    courseLink: "https://scrimba.com/allcourses",
+    projectsLink: "https://github.com/stars/Dimterion/lists/scrimba-projects",
     image: scrimbaCoursesLogo,
+    info: "Various courses with multiple projects",
   },
   {
     platform: "Codecademy",
     name: "JS / CSS / HTML",
-    link: "https://www.codecademy.com/catalog/all",
+    courseLink: "https://www.codecademy.com/catalog/all",
+    projectsLink:
+      "https://github.com/stars/Dimterion/lists/codecademy-projects",
     image: codecademyCoursesLogo,
+    info: "Various courses with multiple projects",
   },
 ];
