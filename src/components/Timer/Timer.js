@@ -4,6 +4,7 @@ import "./timer.css";
 export default function Timer() {
   const [startTime, setStartTime] = useState(null);
   const [now, setNow] = useState(null);
+
   const intervalRef = useRef(null);
 
   function handleStart() {
@@ -17,6 +18,12 @@ export default function Timer() {
   }
 
   function handleStop() {
+    clearInterval(intervalRef.current);
+  }
+
+  function handleReset() {
+    setStartTime(Date.now());
+    setNow(Date.now());
     clearInterval(intervalRef.current);
   }
 
@@ -34,6 +41,9 @@ export default function Timer() {
       </button>
       <button className="timer-btn" onClick={handleStop}>
         Stop
+      </button>
+      <button className="timer-btn" onClick={handleReset}>
+        Reset
       </button>
     </>
   );
