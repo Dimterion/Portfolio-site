@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Timer from "../../components/Timer/Timer";
 import Quiz from "../../components/Quiz/Quiz";
 import image from "../../assets/image_sea.jpg";
 import "./home.css";
@@ -30,8 +31,11 @@ function Home() {
         in the appropriate sections. Meanwhile, take a look at some of the
         Normandy's beauties.
       </p>
+      <Timer />
       <h4>Want to see a tiny quiz?</h4>
-      <button className="quiz-button" onClick={handleQuiz}>{!quiz ? "Sure" : "Changed my mind"}</button>
+      <button className="quiz-button" onClick={handleQuiz}>
+        {!quiz ? "Sure" : "Changed my mind"}
+      </button>
       {quiz && <Quiz />}
     </div>
   );
