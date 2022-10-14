@@ -27,25 +27,46 @@ function Carousel() {
           ))}
         </ul>
       </div>
-      <button
-        className="carousel-btn"
-        onClick={() => {
-          flushSync(() => {
-            if (index < imagesList.length - 1) {
-              setIndex(index + 1);
-            } else {
-              setIndex(0);
-            }
-          });
-          selectedRef.current.scrollIntoView({
-            behavior: "smooth",
-            block: "nearest",
-            inline: "center",
-          });
-        }}
-      >
-        Cycle through the images
-      </button>
+      <div className="carousel-btn-container">
+        <button
+          className="carousel-btn"
+          onClick={() => {
+            flushSync(() => {
+              if (index > 0) {
+                setIndex(index - 1);
+              } else {
+                setIndex(imagesList.length - 1);
+              }
+            });
+            selectedRef.current.scrollIntoView({
+              behavior: "smooth",
+              block: "nearest",
+              inline: "center",
+            });
+          }}
+        >
+          {"<<"}
+        </button>
+        <button
+          className="carousel-btn"
+          onClick={() => {
+            flushSync(() => {
+              if (index < imagesList.length - 1) {
+                setIndex(index + 1);
+              } else {
+                setIndex(0);
+              }
+            });
+            selectedRef.current.scrollIntoView({
+              behavior: "smooth",
+              block: "nearest",
+              inline: "center",
+            });
+          }}
+        >
+          {">>"}
+        </button>
+      </div>
     </>
   );
 }

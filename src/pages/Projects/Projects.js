@@ -47,13 +47,22 @@ function Projects() {
             <Form />
           </>
         )}
-        <p>There's also a simple carousel made with useRef.</p>
+        <p>
+          There's also a simple carousel made with{" "}
+          <a
+            className="link"
+            href="https://beta.reactjs.org/learn/manipulating-the-dom-with-refs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            useRef
+          </a>
+          .
+        </p>
         <button className="toggleImg-btn" onClick={handleCarouselToggle}>
           {!carouselActive ? "Open" : "Close"}
         </button>
-        {carouselActive && (
-          <Carousel />
-        )}
+        {carouselActive && <Carousel />}
       </div>
     </>
   );
