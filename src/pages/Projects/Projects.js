@@ -28,12 +28,12 @@ function Projects() {
       <div className="misc-container">
         <h3>Misc.</h3>
         <p>
-          There's also a simple To Do app which can be seen{" "}
+          - There's also a simple To Do app which can be seen{" "}
           <Link to="/tasks">here</Link>.
         </p>
         <p>
-          And here is a simple form to add some text over the image (click the
-          button to open it).
+          - And here is a form to add some text over the image (click the button
+          to open it).
         </p>
         <button className="toggleImg-btn" onClick={handleImgToggle}>
           {!imgActive ? "Open" : "Close"}
@@ -48,7 +48,7 @@ function Projects() {
           </>
         )}
         <p>
-          There's also a simple carousel made with{" "}
+          - A carousel made with{" "}
           <a
             className="link"
             href="https://beta.reactjs.org/learn/manipulating-the-dom-with-refs"

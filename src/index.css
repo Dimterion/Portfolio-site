@@ -5,6 +5,7 @@
   --hoverColor: #6b9080;
   --alertColor: #e63946;
   --editColor: #219ebc;
+  scroll-behavior: smooth;
 }
 
 body {
