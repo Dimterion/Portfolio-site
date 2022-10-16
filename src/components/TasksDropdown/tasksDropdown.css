@@ -1,0 +1,8 @@
+.tasksDropdown-container {
+  margin: 10px;
+}
+
+.tasksDropdown-container label select {
+  border-radius: 5px;
+  cursor: pointer;
+}

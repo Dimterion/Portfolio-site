@@ -1,10 +1,9 @@
-import { Link } from "react-router-dom";
 import AddTask from "../../components/AddTaskCombined/AddTaskCombined";
-import TaskList from "../../components/TaskListCombined/TaskListCombined";
+import TaskListCombined from "../../components/TaskListCombined/TaskListCombined";
 import { TasksProvider } from "../../context/Context";
-import "./tasksCombined.css";
+import "./toDoCombined.css";
 
-export default function TaskApp() {
+export default function ToDoCombined() {
   return (
     <TasksProvider>
       <div className="tasksCombined-container">
@@ -16,14 +15,11 @@ export default function TaskApp() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Reducer and Context combined
+            Reducer and Context
           </a>
         </h2>
         <AddTask />
-        <TaskList />{" "}
-        <Link className="link" to="/tasks">
-          Go back to the previous version
-        </Link>
+        <TaskListCombined />{" "}
       </div>
     </TasksProvider>
   );
