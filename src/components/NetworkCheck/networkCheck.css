@@ -1,0 +1,8 @@
+.networkCheck-container {
+  padding: 5px;
+  font-style: normal;
+  font-size: 0.9rem;
+  border-top: 1px solid #000;
+  margin: 5px auto 0;
+  width: 150px;
+}
