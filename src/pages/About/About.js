@@ -1,4 +1,5 @@
 import Introduction from "../../components/Introduction/Introduction";
+import AnimatedBlock from "../../components/AnimatedBlock/AnimatedBlock";
 import image from "../../assets/image_park.jpg";
 import "./about.css";
 
@@ -40,20 +41,7 @@ function About() {
           </a>
         </li>
       </ul>
-      <i>Fun fact: avatar at the top left corner was made using CSS</i>
-      <br></br>
-      <br></br>
-      <i>
-        Another fun fact: the paragraph with description above was made using{" "}
-        <a
-          className="link"
-          href="https://beta.reactjs.org/learn/passing-data-deeply-with-context"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          React Context
-        </a>
-      </i>
+      <AnimatedBlock />
     </div>
   );
 }

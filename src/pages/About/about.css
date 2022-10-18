@@ -10,7 +10,7 @@
 .aboutPage-image {
   width: 80vw;
   max-width: 1500px;
-  height: 70vh;
+  height: 60vh;
   object-fit: cover;
   border-radius: 5px;
 }
