@@ -35,7 +35,7 @@ export default function Timer() {
 
   return (
     <>
-      <h4>A simple timer: {secondsPassed.toFixed(1)}</h4>
+      <h4>Time: {secondsPassed.toFixed(1)}</h4>
       <button className="timer-btn" onClick={handleStart}>
         Start
       </button>
