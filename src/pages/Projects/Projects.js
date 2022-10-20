@@ -2,20 +2,17 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import FilterableProjectsTable from "../../components/FilterableProjectsTable/FilterableProjectsTable";
 import Form from "../../components/Form/Form";
+import Modal from "../../components/Modal/Modal";
 import Carousel from "../../components/Carousel/Carousel";
 import { projects } from "../../data/projects";
 import "./projects.css";
 
 function Projects() {
   const [imgActive, setImgActive] = useState(false);
-  const [carouselActive, setCarouselActive] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
 
   function handleImgToggle() {
     setImgActive(!imgActive);
-  }
-
-  function handleCarouselToggle() {
-    setCarouselActive(!carouselActive);
   }
 
   return (
@@ -59,10 +56,22 @@ function Projects() {
           </a>
           .
         </p>
-        <button className="toggleImg-btn" onClick={handleCarouselToggle}>
-          {!carouselActive ? "Open" : "Close"}
-        </button>
-        {carouselActive && <Carousel />}
+        <>
+          <button className="toggleImg-btn" onClick={() => setOpenModal(true)}>
+            Open
+          </button>
+          <Modal isOpen={openModal}>
+            <Carousel />
+            <button
+              className="toggleImg-btn"
+              onClick={() => {
+                setOpenModal(false);
+              }}
+            >
+              Close
+            </button>
+          </Modal>
+        </>
       </div>
     </>
   );

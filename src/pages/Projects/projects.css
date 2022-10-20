@@ -22,6 +22,7 @@
   border-radius: 5px;
   cursor: pointer;
   padding: 5px 10px;
+  margin: 5px;
 }
 
 .toggleImg-btn:hover {
