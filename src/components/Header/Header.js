@@ -1,5 +1,6 @@
 import Avatar from "../Avatar/Avatar";
 import Navbar from "../Navbar/Navbar";
+import Clock from "../Clock/Clock";
 import NetworkCheck from "../NetworkCheck/NetworkCheck";
 import { formatDate } from "../../utils/formatDate";
 import "./header.css";
@@ -13,7 +14,9 @@ function Header() {
         <Navbar />
       </header>
       <div className="date-container">
-        Today is: {formatDate()} <NetworkCheck />
+        <span>Today is: {formatDate()}</span>
+        <Clock />
+        <NetworkCheck />
       </div>
     </>
   );
