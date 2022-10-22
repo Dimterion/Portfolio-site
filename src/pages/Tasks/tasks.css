@@ -1,3 +1,14 @@
 .tasks-header {
   text-align: center;
 }
+
+.tasks-link {
+  margin: 0 10px;
+  color: #000;
+  transition: 1s;
+}
+
+.tasks-link:hover {
+  color: var(--hoverColor);
+  transition: 1s;
+}
