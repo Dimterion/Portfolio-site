@@ -6,6 +6,7 @@ import About from "./pages/About/About";
 import Projects from "./pages/Projects/Projects";
 import Studies from "./pages/Studies/Studies";
 import Tasks from "./pages/Tasks/Tasks";
+import Other from "./pages/Other/Other";
 import Footer from "./components/Footer/Footer";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="projects" element={<Projects />} />
         <Route path="tasks" element={<Tasks />} />
         <Route path="studies" element={<Studies />} />
+        <Route path="other" element={<Other />} />
       </Routes>
       <Footer />
     </BrowserRouter>
