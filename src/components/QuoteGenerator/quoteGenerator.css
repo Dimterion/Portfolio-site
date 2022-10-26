@@ -1,0 +1,33 @@
+.quoteGenerator-container {
+  text-align: center;
+  margin: 30px;
+}
+
+.quoteGenerator-container button {
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background-color: var(--tertiaryBackground);
+  cursor: pointer;
+  transition: 1s;
+  padding: 5px;
+}
+
+.quoteGenerator-container button:hover {
+  background-color: var(--hoverColor);
+  transition: 1s;
+}
+
+.quoteGenerator-container div {
+  background-color: var(--secondaryBackground);
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.quoteGenerator-text {
+  padding-top: 10px;
+}
+
+.quoteGenerator-author {
+  padding-bottom: 10px;
+}

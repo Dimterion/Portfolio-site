@@ -71,6 +71,11 @@ function Projects() {
               Close
             </button>
           </Modal>
+          <h3>Other</h3>
+          <p>
+            I've added some more things made outside of the React documentation.
+            You can check them <Link to="/other">here</Link>.
+          </p>
         </>
       </div>
     </>

@@ -1,0 +1,18 @@
+.apiInfo-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.apiInfo-img {
+  width: 500px;
+  height: 30vh;
+  object-fit: cover;
+  margin: 0 10px;
+}
+
+@media only screen and (max-width: 762px) {
+  .apiInfo-img {
+    width: 90vw;
+    height: 20vh;
+  }
+}

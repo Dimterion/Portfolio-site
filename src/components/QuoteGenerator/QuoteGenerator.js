@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import "./quoteGenerator.css";
 
 function QuoteGenerator() {
   const [quote, setQuote] = useState("");
@@ -19,10 +20,17 @@ function QuoteGenerator() {
   };
 
   return (
-    <div>
-      <button onClick={getQuote}>Get a Quote</button>
-      {quote && <p>{quote}</p>}
-      {author && <p>{author}</p>}
+    <div className="quoteGenerator-container">
+      <h2>Here is a simple generator that uses API to get a random quote.</h2>
+      <button onClick={getQuote}>Get a quote</button>
+      <div>
+        {quote && <p className="quoteGenerator-text">{quote}</p>}
+        {author && (
+          <p className="quoteGenerator-author">
+            <b>{author}</b>
+          </p>
+        )}
+      </div>
     </div>
   );
 }
