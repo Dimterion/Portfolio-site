@@ -27,7 +27,8 @@ function ApiInfo() {
         </a>{" "}
         .
       </p>
-      <div>
+      <details>
+        <summary>Code examples</summary>
         <img
           className="apiInfo-img"
           src={fetchImg}
@@ -38,7 +39,7 @@ function ApiInfo() {
           src={axiosImg}
           alt="Basic Axios code example"
         />
-      </div>
+      </details>
       <a
         className="link"
         href="https://twitter.com/Rapid_API/status/1516130975750762501"

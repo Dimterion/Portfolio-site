@@ -1,6 +1,7 @@
 .quoteGenerator-container {
   text-align: center;
   margin: 30px;
+  border-bottom: 1px solid #000;
 }
 
 .quoteGenerator-container button {

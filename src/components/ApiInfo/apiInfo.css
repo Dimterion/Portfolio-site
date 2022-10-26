@@ -1,13 +1,32 @@
 .apiInfo-container {
   text-align: center;
-  margin: 20px 0;
+  margin: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.apiInfo-container details summary {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: var(--tertiaryBackground);
+  width: 200px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  transition: 1s;
+}
+
+.apiInfo-container details summary:hover {
+  background-color: var(--hoverColor);
+  transition: 1s;
 }
 
 .apiInfo-img {
   width: 500px;
   height: 30vh;
   object-fit: cover;
-  margin: 0 10px;
+  margin: 0 auto;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 762px) {
