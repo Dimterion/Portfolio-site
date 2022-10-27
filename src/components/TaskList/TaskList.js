@@ -23,7 +23,7 @@ function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
       )}
       <ol>
         {todos.map((todo) => (
-          <li key={todo.id}>
+          <li className="todo-item" key={todo.id}>
             <Task todo={todo} onChange={onChangeTodo} onDelete={onDeleteTodo} />
           </li>
         ))}

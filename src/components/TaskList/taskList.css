@@ -1,3 +1,9 @@
+.todo-item::marker {
+  font-family: fantasy;
+  font-weight: bold;
+  text-shadow: 1px 1px #fff;
+}
+
 .edit-btn {
   border-radius: 5px;
   border: 1px solid #000;

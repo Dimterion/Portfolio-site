@@ -13,3 +13,9 @@ body {
   background-color: var(--background);
   margin: 0 0 70px 0;
 }
+
+/* Changed text selection colors for paragraphs through all the pages */
+p::selection {
+  background-color: #333;
+  color: #fff;
+}

@@ -6,6 +6,7 @@
   padding: 5px;
   border-radius: 5px;
   border: 1px solid #000;
+  caret-color: var(--hoverColor);
 }
 
 .addTodo-container > button {
