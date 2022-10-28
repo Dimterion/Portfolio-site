@@ -1,15 +1,18 @@
 .funFacts-btn {
-  padding: 10px;
-  margin: 0 0 15px;
   border-radius: 10px;
-  cursor: pointer;
   background-color: var(--tertiaryBackground);
-  border: 1px solid #000;
+  font-size: 1.25rem;
+  margin: 0 0 15px;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #000;
   transition: 1s;
+  width: 125px;
 }
 
 .funFacts-btn:hover {
-  background-color: var(--hoverColor);
+  box-shadow: 3px 3px 20px var(--hoverColor), 3px 2px 20px var(--hoverColor);
   transition: 1s;
 }
 

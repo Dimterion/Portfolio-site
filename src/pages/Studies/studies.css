@@ -36,6 +36,21 @@
   color: var(--hoverColor);
   transition: 0.5s;
   border: 2px solid var(--hoverColor);
+  animation: moves 1s infinite;
+}
+
+@keyframes moves {
+  0% {
+    transform: scale(1);
+  }
+
+  60% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .course-image {
