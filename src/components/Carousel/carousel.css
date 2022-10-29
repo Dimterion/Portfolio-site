@@ -21,6 +21,7 @@
   max-width: 1500px;
   height: 50vh;
   object-fit: cover;
+  filter: contrast(125%);
 }
 
 .carousel-btn-container {

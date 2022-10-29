@@ -4,6 +4,7 @@
   height: 70vh;
   object-fit: cover;
   border-radius: 5px;
+  filter: drop-shadow(5px 5px 5px #000) contrast(125%);
 }
 
 .image-container {

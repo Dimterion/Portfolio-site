@@ -33,4 +33,5 @@
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 20px;
+  filter: drop-shadow(5px 5px 5px #000) contrast(125%);
 }
