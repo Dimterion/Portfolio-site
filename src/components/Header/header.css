@@ -8,13 +8,17 @@
   padding: 1vh 2vw;
 }
 
+.header-container h1 {
+  margin: 15px auto 0;
+}
+
 .date-container {
   text-align: center;
   background-color: var(--secondaryBackground);
   width: 350px;
   border-radius: 5px;
   margin: 10px auto;
-  padding: 10px;
+  padding: 5px;
   font-style: italic;
 }
 

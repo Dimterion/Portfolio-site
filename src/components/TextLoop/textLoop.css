@@ -1,0 +1,33 @@
+.textLoop-container {
+  width: 50vw;
+  margin: auto;
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: sans-serif;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.textLoop-container p {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  animation: textLoop 7s infinite linear;
+}
+
+@keyframes textLoop {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media only screen and (max-width: 762px) {
+  .textLoop-container {
+    width: 90vw;
+  }
+}
