@@ -3,10 +3,22 @@ import "./textLoop.css";
 function TextLoop() {
   return (
     <div className="textLoop-container">
-      <p>This is a looping text animation. &nbsp;</p>
-      <p>This is a looping text animation. &nbsp;</p>
-      <p>This is a looping text animation. &nbsp;</p>
-      <p>This is a looping text animation. &nbsp;</p>
+      <p>
+        This page's elements are made outside of the examples from React docs.
+        &nbsp;
+      </p>
+      <p>
+        This page's elements are made outside of the examples from React docs.
+        &nbsp;
+      </p>
+      <p>
+        This page's elements are made outside of the examples from React docs.
+        &nbsp;
+      </p>
+      <p>
+        This page's elements are made outside of the examples from React docs.
+        &nbsp;
+      </p>
     </div>
   );
 }

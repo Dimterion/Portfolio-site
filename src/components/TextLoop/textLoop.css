@@ -13,7 +13,7 @@
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: bold;
-  animation: textLoop 7s infinite linear;
+  animation: textLoop 10s infinite linear;
 }
 
 @keyframes textLoop {
