@@ -6,7 +6,7 @@ function NetworkCheck() {
 
   return (
     <div className="networkCheck-container">
-      {isOnline ? "✅ You're connected" : "❌ Check your connection"}
+      {isOnline ? "✅ Connection status" : "❌ Check your connection"}
     </div>
   );
 }

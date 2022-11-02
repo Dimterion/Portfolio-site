@@ -4,8 +4,8 @@
 
 .nav-btn {
   background-color: var(--secondaryBackground);
-  padding: 5px 15px;
-  margin: 10px 20px;
+  padding: 5px 10px;
+  margin: 0 10px;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.5s;
@@ -18,7 +18,7 @@
 }
 
 .nav-btn > i {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .details-btn {
@@ -62,7 +62,15 @@
 }
 
 .details-container {
-  margin-top: 20px;
+  margin: 20px auto 0;
+  border: 1px solid #000;
+  width: 80vw;
+  border-radius: 5px;
+}
+
+.details-container p {
+  font-weight: bold;
+  font-style: italic;
 }
 
 .links-container {
@@ -74,6 +82,7 @@
   color: #000;
   transition: 0.5s;
   margin: 1vh 0;
+  font-style: italic;
 }
 
 .course-link:hover {
