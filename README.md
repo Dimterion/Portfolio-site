@@ -8,4 +8,4 @@ This site is made to learn React using [official documentation](https://beta.rea
 
 ## Built with
 
-React
+React, React Router, JavaScript, CSS, HTML
