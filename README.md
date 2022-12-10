@@ -2,9 +2,9 @@
 
 This site is made to learn React using [official documentation](https://beta.reactjs.org/). It may change over time depending on the needs of further learning.
 
-## Link
+## Live Version
 
-[Live Version](https://portfolio-site-dimterion.vercel.app/)
+[Portfolio Site](https://portfolio-site-dimterion.vercel.app/)
 
 ## Details
 
