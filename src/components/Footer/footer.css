@@ -11,3 +11,24 @@
 .footer-container > a {
   margin: 0 5vw;
 }
+
+#the-final-piece {
+  cursor: auto;
+}
+
+#the-final-piece {
+  bottom: 0;
+  color: black;
+  cursor: auto;
+  height: 1rem;
+  margin: 0.3rem 1rem;
+  right: 0;
+  position: absolute;
+  transition: 1s;
+  width: 1rem;
+}
+
+#the-final-piece:hover {
+  color: gold;
+  transition: 1s;
+}
