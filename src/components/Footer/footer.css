@@ -12,23 +12,18 @@
   margin: 0 5vw;
 }
 
-#the-final-piece {
-  cursor: auto;
-}
-
-#the-final-piece {
-  bottom: 0;
+#portal {
   color: black;
   cursor: auto;
-  height: 1rem;
-  margin: 0.3rem 1rem;
+  font-size: 1rem;
+  margin: 0 1rem 0 0;
   right: 0;
   position: absolute;
-  transition: 1s;
-  width: 1rem;
+  top: 1.5rem;
+  transition: 0.5s;
 }
 
-#the-final-piece:hover {
+#portal:hover {
   color: gold;
-  transition: 1s;
+  transition: 0.5s;
 }
