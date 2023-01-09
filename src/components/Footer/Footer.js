@@ -31,7 +31,7 @@ function Footer() {
         <i className="fa-solid fa-angles-up"></i>
       </a>
       <a id="portal" href="https://the-final-piece.vercel.app/">
-        <i class="fa-solid fa-diamond"></i>
+        <i className="fa-solid fa-diamond"></i>
       </a>
     </footer>
   );

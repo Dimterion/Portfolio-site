@@ -4,6 +4,7 @@ import "./jsChallenges.css";
 function JsChallenges() {
   const [screamArray, setScreamArray] = useState("I am here to scream");
   const [whisperArray, setWhisperArray] = useState("I AM HERE TO WHISPER!");
+  const [text, setText] = useState("Change me!");
 
   function scream() {
     const screamCheck = !screamArray.includes("😱");
@@ -25,6 +26,20 @@ function JsChallenges() {
     setWhisperArray("I AM HERE TO WHISPER!");
   }
 
+  function fun() {
+    let newText = "";
+
+    for (let i = 0; i < text.length; i++) {
+      if (i % 2 === 0) {
+        newText += text[i].toUpperCase();
+      } else {
+        newText += text[i];
+      }
+    }
+
+    setText(newText);
+  }
+
   return (
     <div>
       <h2>Work in progress</h2>
@@ -38,6 +53,33 @@ function JsChallenges() {
       <p>{whisperArray}</p>
       <button onClick={whisper}>Whisper</button>
       <button onClick={noWhisper}>Don't whisper</button>
+      <p>{text}</p>
+      <form>
+        <label>
+          <input
+            value={text}
+            onChange={(e) => {
+              setText(e.target.value);
+            }}
+          />
+        </label>
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            fun();
+          }}
+        >
+          Have some fun
+        </button>
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            setText("All clear!");
+          }}
+        >
+          Clear text
+        </button>
+      </form>
     </div>
   );
 }
