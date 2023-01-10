@@ -13,8 +13,10 @@ function Other() {
       <Link className="link other-link" to="/projects">
         Back to the projects page
       </Link>
+      <br></br>
+      <br></br>
       <Link className="link other-link" to="/jschallenges">
-        Examples of the JavaScript coding challenges
+        Examples of coding challenges
       </Link>
     </div>
   );

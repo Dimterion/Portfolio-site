@@ -4,7 +4,7 @@ import "./jsChallenges.css";
 function JsChallenges() {
   const [screamArray, setScreamArray] = useState("I am here to scream");
   const [whisperArray, setWhisperArray] = useState("I AM HERE TO WHISPER!");
-  const [text, setText] = useState("Change me!");
+  const [text, setText] = useState("Type something.");
 
   function scream() {
     const screamCheck = !screamArray.includes("😱");
@@ -43,9 +43,7 @@ function JsChallenges() {
   return (
     <div>
       <h2>Work in progress</h2>
-      <h3>
-        Here I'm testing the usage of various JavaScript coding challenges.
-      </h3>
+      <h3>Here I'm testing the usage of various coding challenges.</h3>
       <p>{screamArray}</p>
       <button onClick={scream}>Scream</button>
       <button onClick={noScream}>Don't scream</button>
@@ -63,22 +61,40 @@ function JsChallenges() {
             }}
           />
         </label>
-        <button
-          onClick={(e) => {
-            e.preventDefault();
-            fun();
-          }}
-        >
-          Have some fun
-        </button>
-        <button
-          onClick={(e) => {
-            e.preventDefault();
-            setText("All clear!");
-          }}
-        >
-          Clear text
-        </button>
+        <div>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              fun();
+            }}
+          >
+            Capitalize every other character
+          </button>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              setText(text.toUpperCase());
+            }}
+          >
+            Uppercase
+          </button>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              setText(text.toLowerCase());
+            }}
+          >
+            Lowercase
+          </button>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              setText("");
+            }}
+          >
+            Clear text
+          </button>
+        </div>
       </form>
     </div>
   );
