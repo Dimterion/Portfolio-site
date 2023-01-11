@@ -10,13 +10,13 @@ function Other() {
       <QuoteGenerator />
       <ApiInfo />
       <TextLoop />
-      <Link className="link other-link" to="/projects">
-        Back to the projects page
+      <Link className="link other-link" to="/jschallenges">
+        Examples of coding challenges
       </Link>
       <br></br>
       <br></br>
-      <Link className="link other-link" to="/jschallenges">
-        Examples of coding challenges
+      <Link className="link other-link" to="/projects">
+        Back to the projects page
       </Link>
     </div>
   );

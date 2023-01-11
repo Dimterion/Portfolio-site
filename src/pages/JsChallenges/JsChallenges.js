@@ -41,9 +41,9 @@ function JsChallenges() {
   }
 
   return (
-    <div>
+    <div className="jsChallenges-container">
       <h2>Work in progress</h2>
-      <h3>Here I'm testing the usage of various coding challenges.</h3>
+      <h3>Here I test the usage of various coding challenges</h3>
       <p>{screamArray}</p>
       <button onClick={scream}>Scream</button>
       <button onClick={noScream}>Don't scream</button>

@@ -1,0 +1,11 @@
+.jsChallenges-container {
+  margin: auto 1vw;
+}
+
+.jsChallenges-container button {
+  margin-right: 0.5vw;
+}
+
+.jsChallenges-container input {
+  margin-bottom: 2vh;
+}
