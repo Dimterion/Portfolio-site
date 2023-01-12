@@ -3,7 +3,7 @@
 }
 
 .jsChallenges-container button {
-  margin-right: 0.5vw;
+  margin: 1vh 0.5vw 0 0;
 }
 
 .jsChallenges-container input {

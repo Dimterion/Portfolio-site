@@ -42,12 +42,14 @@ function JsChallenges() {
 
   return (
     <div className="jsChallenges-container">
-      <h2>Work in progress</h2>
+      <h2>Work In Progress</h2>
       <h3>Here I test the usage of various coding challenges</h3>
+      <h4>JS split(), join(), includes(), toUpperCase()</h4>
       <p>{screamArray}</p>
       <button onClick={scream}>Scream</button>
       <button onClick={noScream}>Don't scream</button>
       <br></br>
+      <h4>JS endsWith(), slice(), toLowerCase()</h4>
       <p>{whisperArray}</p>
       <button onClick={whisper}>Whisper</button>
       <button onClick={noWhisper}>Don't whisper</button>
