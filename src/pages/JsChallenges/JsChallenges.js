@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./jsChallenges.css";
 
 function JsChallenges() {
@@ -41,64 +42,71 @@ function JsChallenges() {
   }
 
   return (
-    <div className="jsChallenges-container">
-      <h2>Work In Progress</h2>
-      <h3>Here I test the usage of various coding challenges</h3>
-      <h4>JS split(), join(), includes(), toUpperCase()</h4>
-      <p>{screamArray}</p>
-      <button onClick={scream}>Scream</button>
-      <button onClick={noScream}>Don't scream</button>
-      <br></br>
-      <h4>JS endsWith(), slice(), toLowerCase()</h4>
-      <p>{whisperArray}</p>
-      <button onClick={whisper}>Whisper</button>
-      <button onClick={noWhisper}>Don't whisper</button>
-      <p>{text}</p>
-      <form>
-        <label>
-          <input
-            value={text}
-            onChange={(e) => {
-              setText(e.target.value);
-            }}
-          />
-        </label>
-        <div>
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              fun();
-            }}
-          >
-            Capitalize every other character
-          </button>
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              setText(text.toUpperCase());
-            }}
-          >
-            Uppercase
-          </button>
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              setText(text.toLowerCase());
-            }}
-          >
-            Lowercase
-          </button>
-          <button
-            onClick={(e) => {
-              e.preventDefault();
-              setText("");
-            }}
-          >
-            Clear text
-          </button>
-        </div>
-      </form>
-    </div>
+    <>
+      <div className="jsChallenges-container">
+        <h2>Work In Progress</h2>
+        <h3>Here I test the usage of various coding challenges</h3>
+        <h4>JS split(), join(), includes(), toUpperCase()</h4>
+        <p>{screamArray}</p>
+        <button onClick={scream}>Scream</button>
+        <button onClick={noScream}>Don't scream</button>
+        <br></br>
+        <h4>JS endsWith(), slice(), toLowerCase()</h4>
+        <p>{whisperArray}</p>
+        <button onClick={whisper}>Whisper</button>
+        <button onClick={noWhisper}>Don't whisper</button>
+        <p>{text}</p>
+        <form>
+          <label>
+            <input
+              value={text}
+              onChange={(e) => {
+                setText(e.target.value);
+              }}
+            />
+          </label>
+          <div>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                fun();
+              }}
+            >
+              Capitalize every other character
+            </button>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                setText(text.toUpperCase());
+              }}
+            >
+              Uppercase
+            </button>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                setText(text.toLowerCase());
+              }}
+            >
+              Lowercase
+            </button>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                setText("");
+              }}
+            >
+              Clear text
+            </button>
+          </div>
+        </form>
+        <br></br>
+        <br></br>
+      </div>
+      <Link className="link other-link" to="/other">
+        Previous page
+      </Link>
+    </>
   );
 }
 
