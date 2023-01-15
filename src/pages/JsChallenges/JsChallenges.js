@@ -41,6 +41,15 @@ function JsChallenges() {
     setText(newText);
   }
 
+  function removeDup() {
+    let newText = text.split("");
+    newText = newText.filter((e, i) => {
+      return newText.indexOf(e) === i;
+    });
+
+    setText(newText.join(""));
+  }
+
   return (
     <>
       <div className="jsChallenges-container">
@@ -89,6 +98,14 @@ function JsChallenges() {
               }}
             >
               Lowercase
+            </button>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                removeDup();
+              }}
+            >
+              Remove duplicate characters
             </button>
             <button
               onClick={(e) => {
