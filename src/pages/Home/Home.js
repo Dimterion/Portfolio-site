@@ -25,6 +25,30 @@ function Home() {
         in the appropriate sections. Meanwhile, take a look at some of the
         Normandy's beauties.
       </p>
+      <p className="homePage-text">
+        <b>Note: </b>This site was built out of examples from{" "}
+        <a
+          className="link"
+          href="https://reactjs.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          React Documentation
+        </a>
+        . I wanted to check them "in action" and for that made various
+        components and inserted them throught the pages. So, it's probably more
+        of a sandbox for me. If you want to check my main profile, it's
+        available{" "}
+        <a
+          className="link"
+          href="https://dimterion.github.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          here
+        </a>
+        .
+      </p>
       <TabSwitcher
         tabs={[
           {
