@@ -1,54 +1,19 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import {
+  scream,
+  noScream,
+  whisper,
+  noWhisper,
+  fun,
+  removeDup,
+} from "../../utils/jschallenges";
 import "./jsChallenges.css";
 
 function JsChallenges() {
   const [screamArray, setScreamArray] = useState("I am here to scream");
   const [whisperArray, setWhisperArray] = useState("I AM HERE TO WHISPER!");
   const [text, setText] = useState("Type something.");
-
-  function scream() {
-    const screamCheck = !screamArray.includes("😱");
-
-    screamCheck &&
-      setScreamArray(screamArray.split(" ").join(" 😱 ").toUpperCase() + "!");
-  }
-
-  function noScream() {
-    setScreamArray("I am here to scream");
-  }
-
-  function whisper() {
-    whisperArray.endsWith("!") &&
-      setWhisperArray(whisperArray.slice(0, -1).toLowerCase());
-  }
-
-  function noWhisper() {
-    setWhisperArray("I AM HERE TO WHISPER!");
-  }
-
-  function fun() {
-    let newText = "";
-
-    for (let i = 0; i < text.length; i++) {
-      if (i % 2 === 0) {
-        newText += text[i].toUpperCase();
-      } else {
-        newText += text[i];
-      }
-    }
-
-    setText(newText);
-  }
-
-  function removeDup() {
-    let newText = text.split("");
-    newText = newText.filter((e, i) => {
-      return newText.indexOf(e) === i;
-    });
-
-    setText(newText.join(""));
-  }
 
   return (
     <>
@@ -57,13 +22,41 @@ function JsChallenges() {
         <h3>Here I test the usage of various coding challenges</h3>
         <h4>JS split(), join(), includes(), toUpperCase()</h4>
         <p>{screamArray}</p>
-        <button onClick={scream}>Scream</button>
-        <button onClick={noScream}>Don't scream</button>
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            scream(screamArray, setScreamArray);
+          }}
+        >
+          Scream
+        </button>
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            noScream(setScreamArray);
+          }}
+        >
+          Don't scream
+        </button>
         <br></br>
         <h4>JS endsWith(), slice(), toLowerCase()</h4>
         <p>{whisperArray}</p>
-        <button onClick={whisper}>Whisper</button>
-        <button onClick={noWhisper}>Don't whisper</button>
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            whisper(whisperArray, setWhisperArray);
+          }}
+        >
+          Whisper
+        </button>
+        <button
+          onClick={(e) => {
+            e.preventDefault();
+            noWhisper(setWhisperArray);
+          }}
+        >
+          Don't whisper
+        </button>
         <p>{text}</p>
         <form>
           <label>
@@ -78,7 +71,7 @@ function JsChallenges() {
             <button
               onClick={(e) => {
                 e.preventDefault();
-                fun();
+                fun(text, setText);
               }}
             >
               Capitalize every other character
@@ -102,7 +95,7 @@ function JsChallenges() {
             <button
               onClick={(e) => {
                 e.preventDefault();
-                removeDup();
+                removeDup(text, setText);
               }}
             >
               Remove duplicate characters
