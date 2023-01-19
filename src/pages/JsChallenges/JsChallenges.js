@@ -62,7 +62,6 @@ function JsChallenges() {
           <label>
             <input
               className="jsChallenges-text-input"
-              size={50}
               value={text}
               onChange={(e) => {
                 setText(e.target.value);
