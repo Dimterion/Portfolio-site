@@ -1,21 +1,5 @@
 export function scream(screamArray, setScreamArray) {
-  const screamCheck = !screamArray.includes("😱");
-
-  screamCheck &&
-    setScreamArray(screamArray.split(" ").join(" 😱 ").toUpperCase() + " !!!");
-}
-
-export function noScream(setScreamArray) {
-  setScreamArray("I am here to scream");
-}
-
-export function whisper(whisperArray, setWhisperArray) {
-  whisperArray.endsWith("!") &&
-    setWhisperArray(whisperArray.slice(0, -1).toLowerCase());
-}
-
-export function noWhisper(setWhisperArray) {
-  setWhisperArray("I AM HERE TO WHISPER!");
+  setScreamArray(screamArray.split(" ").join(" 😱 ").toUpperCase() + " !!!");
 }
 
 export function fun(arr, setArr) {

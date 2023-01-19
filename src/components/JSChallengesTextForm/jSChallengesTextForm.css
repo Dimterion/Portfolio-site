@@ -1,0 +1,21 @@
+.jsChallenges-container {
+  text-align: center;
+  margin: auto 1vw;
+}
+
+.jsChallenges-container button {
+  margin: 1vh 0.5vw 0 0;
+}
+
+.jsChallenges-container input {
+  margin-bottom: 2vh;
+}
+
+.jsChallenges-text-input {
+  margin: 1vh 0;
+  height: 10vh;
+  width: 80vw;
+  font-family: "Inter", sans-serif;
+  border-radius: 5px;
+  background-color: var(--secondaryBackground);
+}
