@@ -2,7 +2,7 @@ export function scream(screamArray, setScreamArray) {
   const screamCheck = !screamArray.includes("😱");
 
   screamCheck &&
-    setScreamArray(screamArray.split(" ").join(" 😱 ").toUpperCase() + "!");
+    setScreamArray(screamArray.split(" ").join(" 😱 ").toUpperCase() + " !!!");
 }
 
 export function noScream(setScreamArray) {
@@ -25,7 +25,7 @@ export function fun(arr, setArr) {
     if (i % 2 === 0) {
       newArr += arr[i].toUpperCase();
     } else {
-      newArr += arr[i];
+      newArr += arr[i].toLowerCase();
     }
   }
 

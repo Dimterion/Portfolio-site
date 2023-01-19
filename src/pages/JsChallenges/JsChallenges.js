@@ -57,10 +57,12 @@ function JsChallenges() {
         >
           Don't whisper
         </button>
-        <p>{text}</p>
+        <p className="jsChallenges-text-field">{text}</p>
         <form>
           <label>
             <input
+              className="jsChallenges-text-input"
+              size={50}
               value={text}
               onChange={(e) => {
                 setText(e.target.value);
@@ -99,6 +101,14 @@ function JsChallenges() {
               }}
             >
               Remove duplicate characters
+            </button>
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                scream(text, setText);
+              }}
+            >
+              Scream
             </button>
             <button
               onClick={(e) => {

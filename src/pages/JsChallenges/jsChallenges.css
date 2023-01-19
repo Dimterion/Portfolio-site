@@ -9,3 +9,16 @@
 .jsChallenges-container input {
   margin-bottom: 2vh;
 }
+
+.jsChallenges-text-field {
+  height: 10vh;
+  background-color: var(--secondaryBackground);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.jsChallenges-text-input {
+  height: 5vh;
+  border-radius: 5px;
+  background-color: var(--secondaryBackground);
+}
