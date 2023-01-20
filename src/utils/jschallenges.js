@@ -1,26 +1,27 @@
-export function scream(screamArray, setScreamArray) {
-  setScreamArray(screamArray.split(" ").join(" 😱 ").toUpperCase() + " !!!");
-}
+export function capEveryOtherChar(text, setText) {
+  let newText = "";
 
-export function fun(arr, setArr) {
-  let newArr = "";
-
-  for (let i = 0; i < arr.length; i++) {
+  for (let i = 0; i < text.length; i++) {
     if (i % 2 === 0) {
-      newArr += arr[i].toUpperCase();
+      newText += text[i].toUpperCase();
     } else {
-      newArr += arr[i].toLowerCase();
+      newText += text[i].toLowerCase();
     }
   }
 
-  setArr(newArr);
+  setText(newText);
 }
 
-export function removeDup(arr, setArr) {
-  let newArr = arr.split("");
-  newArr = newArr.filter((e, i) => {
-    return newArr.indexOf(e) === i;
+export function removeDup(text, setText) {
+  let newText = text.split("");
+
+  newText = newText.filter((e, i) => {
+    return newText.indexOf(e) === i;
   });
 
-  setArr(newArr.join(""));
+  setText(newText.join(""));
+}
+
+export function scream(text, setText) {
+  setText(text.split(" ").join(" 😱 ").toUpperCase() + " !!!");
 }

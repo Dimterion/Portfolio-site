@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { scream, fun, removeDup } from "../../utils/jschallenges";
+import { scream, capEveryOtherChar, removeDup } from "../../utils/jschallenges";
 import "./jSChallengesTextForm.css";
 
 function JSChallengesTextForm() {
@@ -10,15 +10,13 @@ function JSChallengesTextForm() {
       <h3>Text Edit Form</h3>
       <h4>A simple form to modify text input</h4>
       <form>
-        <label>
-          <textarea
-            className="jsChallenges-text-input"
-            value={text}
-            onChange={(e) => {
-              setText(e.target.value);
-            }}
-          />
-        </label>
+        <textarea
+          className="jsChallenges-text-input"
+          value={text}
+          onChange={(e) => {
+            setText(e.target.value);
+          }}
+        />
         <div className="jsChallenges-buttons-container">
           <button
             onClick={(e) => {
@@ -39,7 +37,7 @@ function JSChallengesTextForm() {
           <button
             onClick={(e) => {
               e.preventDefault();
-              fun(text, setText);
+              capEveryOtherChar(text, setText);
             }}
           >
             Capitalize every other character
