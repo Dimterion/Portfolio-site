@@ -16,6 +16,30 @@
   height: 10vh;
   width: 80vw;
   font-family: "Inter", sans-serif;
+  font-size: 1rem;
   border-radius: 5px;
   background-color: var(--secondaryBackground);
+}
+
+.jsChallenges-buttons-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.jsChallenges-buttons-container button {
+  width: 100px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: var(--tertiaryBackground);
+  border: 1px solid #000;
+  transition: 1s;
+  padding: 5px 0;
+}
+
+.jsChallenges-buttons-container button:hover {
+  background-color: var(--hoverColor);
+  transition: 1s;
 }

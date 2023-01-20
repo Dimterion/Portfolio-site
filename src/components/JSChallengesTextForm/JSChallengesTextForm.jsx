@@ -3,7 +3,7 @@ import { scream, fun, removeDup } from "../../utils/jschallenges";
 import "./jSChallengesTextForm.css";
 
 function JSChallengesTextForm() {
-  const [text, setText] = useState("Type something.");
+  const [text, setText] = useState("Type something");
 
   return (
     <div className="jsChallenges-container">
@@ -19,7 +19,7 @@ function JSChallengesTextForm() {
             }}
           />
         </label>
-        <div>
+        <div className="jsChallenges-buttons-container">
           <button
             onClick={(e) => {
               e.preventDefault();
