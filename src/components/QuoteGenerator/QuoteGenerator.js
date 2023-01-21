@@ -5,6 +5,7 @@ import "./quoteGenerator.css";
 function QuoteGenerator() {
   const [quote, setQuote] = useState("");
   const [author, setAuthor] = useState("");
+  const [buttonName, setButtonName] = useState("Get a Quote");
 
   const getQuote = () => {
     axios
@@ -17,12 +18,14 @@ function QuoteGenerator() {
       .catch((err) => {
         console.log(err);
       });
+
+    setButtonName("Get a New Quote");
   };
 
   return (
     <div className="quoteGenerator-container">
       <h2>Here is a simple generator that uses API to get a random quote.</h2>
-      <button onClick={getQuote}>Get a quote</button>
+      <button onClick={getQuote}>{buttonName}</button>
       <div>
         {quote && <p className="quoteGenerator-text">{quote}</p>}
         {author && (

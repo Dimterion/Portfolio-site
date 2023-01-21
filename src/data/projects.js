@@ -228,4 +228,12 @@ export const projects = [
     demo: "https://dimterion.github.io/Basic-html-css-js-app",
     repo: "https://github.com/Dimterion/Basic-html-css-js-app",
   },
+  {
+    category: "Personal projects",
+    technology: "React, Firebase, Firestore",
+    completed: false,
+    name: "Posts App",
+    demo: "",
+    repo: "https://github.com/Dimterion/Posts-app",
+  },
 ];
