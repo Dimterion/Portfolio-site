@@ -1,6 +1,11 @@
 .jsChallenges-container {
   text-align: center;
-  margin: auto 1vw;
+  margin: 0 1vw 3vh;
+}
+
+.jsChallenges-container h4 {
+  text-align: left;
+  margin-left: 9vw;
 }
 
 .jsChallenges-container button {
@@ -12,7 +17,7 @@
 }
 
 .jsChallenges-text-input {
-  margin: 1vh 0;
+  margin: 0 0 1vh;
   height: 10vh;
   width: 80vw;
   font-family: "Inter", sans-serif;
@@ -25,6 +30,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  margin-bottom: 2vh;
 }
 
 .jsChallenges-buttons-container button {
