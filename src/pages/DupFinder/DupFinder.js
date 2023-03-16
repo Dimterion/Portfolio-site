@@ -6,11 +6,23 @@ function DupFinder() {
   const [dup, setDup] = useState([]);
 
   function findDup(text, setDup) {
-    const dupArray = text
-      .split(" ")
-      .filter((item, index) => text.split(" ").indexOf(item) !== index);
+    let words = text.toLowerCase().split(" ");
 
-    setDup(dupArray);
+    const dups = {};
+
+    words.forEach((word) => {
+      dups[word] = (dups[word] || 0) + 1;
+    });
+
+    let wordsCount = [];
+
+    for (const word in dups) {
+      word !== "" &&
+        dups[word] > 1 &&
+        wordsCount.push(`${word}: ${dups[word]}`);
+    }
+
+    setDup(wordsCount);
   }
 
   return (
@@ -34,8 +46,8 @@ function DupFinder() {
         </button>
       </form>
       <ul>
-        {dup.map((e) => (
-          <li key={dup.indexOf(e)}>{e}</li>
+        {dup.map((word) => (
+          <li key={`${word}-${dup.indexOf(word)}`}>{word}</li>
         ))}
       </ul>
     </section>
