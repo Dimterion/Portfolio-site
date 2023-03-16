@@ -9,6 +9,7 @@ import Tasks from "./pages/Tasks/Tasks";
 import Other from "./pages/Other/Other";
 import JsChallenges from "./pages/JsChallenges/JsChallenges";
 import Footer from "./components/Footer/Footer";
+import DupFinder from "./pages/DupFinder/DupFinder";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="studies" element={<Studies />} />
         <Route path="other" element={<Other />} />
         <Route path="jschallenges" element={<JsChallenges />} />
+        <Route path="dup-finder" element={<DupFinder />} />
       </Routes>
       <Footer />
     </BrowserRouter>

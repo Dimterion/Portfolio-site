@@ -1,0 +1,6 @@
+.dupFinder-container form {
+  max-width: 80vw;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: auto;
+}
