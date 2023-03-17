@@ -1,4 +1,4 @@
-.dupFinder-container h2 {
+.dupFinder-container {
   text-align: center;
 }
 
@@ -7,4 +7,35 @@
   display: flex;
   flex-flow: column nowrap;
   margin: auto;
+}
+
+.dupFinder-container form textarea {
+  background-color: var(--secondaryBackground);
+  border-radius: 5px;
+  min-height: 100px;
+  padding: 5px;
+  font-size: 1.25rem;
+}
+
+.dupFinder-container ul {
+  padding: 0;
+  list-style: none;
+  font-size: 1.25rem;
+}
+
+.dupFinder-container ul li {
+  margin-top: 5px;
+}
+
+.dupFinder-container button {
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin: 15px auto;
+  padding: 10px 20px;
+  background-color: var(--secondaryBackground);
+  cursor: pointer;
+}
+
+.dupFinder-container button:hover {
+  scale: 0.9;
 }

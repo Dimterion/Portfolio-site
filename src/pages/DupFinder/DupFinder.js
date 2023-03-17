@@ -40,6 +40,7 @@ function DupFinder() {
   return (
     <section className="dupFinder-container">
       <h2>Duplicates Finder</h2>
+      <p>Find duplicate words in your text</p>
       <form>
         <textarea
           placeholder="Type here"
