@@ -15,6 +15,11 @@ function Other() {
       </Link>
       <br></br>
       <br></br>
+      <Link className="link other-link" to="/dup-finder">
+        Duplicate words finder
+      </Link>
+      <br></br>
+      <br></br>
       <Link className="link other-link" to="/projects">
         Back to the projects page
       </Link>

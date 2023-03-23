@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./dupFinder.css";
 
 function DupFinder() {
@@ -64,6 +65,9 @@ function DupFinder() {
           <li key={`${word}-${dup.indexOf(word)}`}>{word}</li>
         ))}
       </ul>
+      <Link className="link other-link" to="/other">
+        Back to the previous page
+      </Link>
     </section>
   );
 }
