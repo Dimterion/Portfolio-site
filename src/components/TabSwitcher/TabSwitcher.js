@@ -16,7 +16,6 @@ function TabSwitcher({ tabs }) {
           {tab.header}
         </button>
       ))}
-      <hr />
       <div key={selectedId}>
         <h3>{selectedTab.header}</h3>
         {selectedTab.content}

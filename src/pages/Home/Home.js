@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import TabSwitcher from "../../components/TabSwitcher/TabSwitcher";
 import Timer from "../../components/Timer/Timer";
@@ -6,6 +7,12 @@ import image from "../../assets/image_sea.jpg";
 import "./home.css";
 
 function Home() {
+  const [toggle, setToggle] = useState(false);
+
+  function toggleButtons() {
+    setToggle(!toggle);
+  }
+
   return (
     <div className="home-container">
       <img
@@ -36,8 +43,8 @@ function Home() {
           React Documentation
         </a>
         . I wanted to check them "in action" and for that made various
-        components and inserted them throught the pages. So, it's probably more
-        of a sandbox for me. If you want to check my main profile, it's
+        components and inserted them throughout the pages. Thus, it's probably
+        more of a sandbox for me. If you want to check my main profile, it's
         available{" "}
         <a
           className="link"
@@ -49,20 +56,27 @@ function Home() {
         </a>
         .
       </p>
-      <TabSwitcher
-        tabs={[
-          {
-            id: 1,
-            header: "Timer",
-            content: <Timer />,
-          },
-          {
-            id: 2,
-            header: "Quiz",
-            content: <Quiz />,
-          },
-        ]}
-      />
+      <div className="homePage-buttons">
+        <button className="tab-btn" onClick={() => toggleButtons()}>
+          {!toggle ? "Open Timer and Quiz" : "Close"}
+        </button>
+        {toggle && (
+          <TabSwitcher
+            tabs={[
+              {
+                id: 1,
+                header: "Timer",
+                content: <Timer />,
+              },
+              {
+                id: 2,
+                header: "Quiz",
+                content: <Quiz />,
+              },
+            ]}
+          />
+        )}
+      </div>
     </div>
   );
 }

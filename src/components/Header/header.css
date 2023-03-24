@@ -29,6 +29,10 @@
     justify-content: center;
   }
 
+  .header-container h1 {
+    font-size: 1.5rem;
+  }
+
   .date-container {
     width: 200px;
   }

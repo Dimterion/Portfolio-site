@@ -1,5 +1,5 @@
 .home-container {
-  margin: 30px 0;
+  margin: 15px 0;
   text-align: center;
 }
 
@@ -19,4 +19,17 @@
   margin: 30px auto;
   padding: 5px;
   font-size: 1.25rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .homePage-text {
+    width: 70vw;
+  }
+}
+
+.homePage-buttons {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 200px;
+  margin: auto;
 }
