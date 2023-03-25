@@ -17,11 +17,13 @@ function Projects() {
 
   return (
     <>
-      <h2 className="projectsPage-title">Here you can see my projects</h2>
-      <i>*Projects description can be seen in the repos Readme</i>
-      <br></br>
-      <i>**Click on the row to highlight it</i>
+      <h2 className="projectsPage-title">Projects List</h2>
       <FilterableProjectsTable projects={projects} />
+      <div className="projectsPage-notes">
+        <i>*Projects description can be seen in the repos Readme</i>
+        <br></br>
+        <i>**Click on the row to highlight it</i>
+      </div>
       <div className="misc-container">
         <h3>Misc.</h3>
         <p>

@@ -2,8 +2,13 @@
   text-align: center;
 }
 
+.projectsPage-notes {
+  text-align: right;
+  margin-right: 2vw;
+}
+
 .misc-container {
-  margin: 5vh 1vw;
+  margin: 2vh 1vw;
   border-top: 1px solid #000;
   padding: 10px;
 }
