@@ -10,14 +10,16 @@ function Header() {
     <>
       <header className="header-container">
         <Avatar />
-        <h1>Dimterion's projects and studies</h1>
+        <div>
+          <h1>Dimterion's Projects & Studies</h1>
+          <div className="date-container">
+            <span>Today is: {formatDate()}</span>
+            <Clock />
+            <NetworkCheck />
+          </div>
+        </div>
         <Navbar />
       </header>
-      <div className="date-container">
-        <span>Today is: {formatDate()}</span>
-        <Clock />
-        <NetworkCheck />
-      </div>
     </>
   );
 }

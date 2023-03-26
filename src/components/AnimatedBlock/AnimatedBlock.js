@@ -7,7 +7,7 @@ function AnimatedBlock() {
   return (
     <>
       <button className="funFacts-btn" onClick={() => setShow(!show)}>
-        {show ? "Close" : "Fun facts"}
+        {show ? "Close" : "Fun Facts"}
       </button>
       {show && (
         <div className="animatedBlock-container">
@@ -26,6 +26,16 @@ function AnimatedBlock() {
             </a>
             .
           </i>
+          <br></br>
+          <br></br>
+          <a
+            className="link"
+            href="https://medium.com/@dimterion"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            I write stories on Medium every Friday
+          </a>
         </div>
       )}
     </>

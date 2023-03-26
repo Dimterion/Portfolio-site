@@ -1,5 +1,6 @@
 .aboutPage-container {
   text-align: center;
+  margin-top: 5vh;
 }
 
 .aboutPage-container > h3 {
@@ -8,20 +9,12 @@
 }
 
 .aboutPage-image {
-  width: 80vw;
+  width: 70vw;
   max-width: 1500px;
-  height: 60vh;
+  height: 40vh;
   object-fit: cover;
   border-radius: 5px;
   filter: drop-shadow(5px 5px 5px #000) contrast(125%);
-}
-
-.aboutPage-list {
-  text-align: start;
-}
-
-.aboutPage-list > li {
-  margin: 10px;
 }
 
 @media only screen and (max-width: 762px) {
