@@ -58,20 +58,20 @@ function Home() {
       </p>
       <div className="homePage-buttons">
         <button className="tab-btn" onClick={() => toggleButtons()}>
-          {!toggle ? "Open Timer and Quiz" : "Close"}
+          {!toggle ? "Timer & Quiz" : "Close"}
         </button>
         {toggle && (
           <TabSwitcher
             tabs={[
               {
                 id: 1,
-                header: "Timer",
-                content: <Timer />,
+                header: "Quiz",
+                content: <Quiz />,
               },
               {
                 id: 2,
-                header: "Quiz",
-                content: <Quiz />,
+                header: "Timer",
+                content: <Timer />,
               },
             ]}
           />

@@ -16,20 +16,21 @@
   background-color: var(--secondaryBackground);
   border-radius: 5px;
   width: 90vw;
-  margin: 10px auto;
-  padding: 5px;
+  margin: 3vh auto;
+  padding: 10px 5px;
   font-size: 1.1rem;
 }
 
 @media only screen and (min-width: 992px) {
   .homePage-text {
-    width: 70vw;
+    width: 60vw;
   }
 }
 
 .homePage-buttons {
   display: flex;
   flex-flow: column nowrap;
-  max-width: 200px;
+  align-items: center;
+  max-width: 350px;
   margin: auto;
 }

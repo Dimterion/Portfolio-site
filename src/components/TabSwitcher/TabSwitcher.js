@@ -7,15 +7,17 @@ function TabSwitcher({ tabs }) {
 
   return (
     <>
-      {tabs.map((tab) => (
-        <button
-          className="tab-btn"
-          key={tab.id}
-          onClick={() => setSelectedId(tab.id)}
-        >
-          {tab.header}
-        </button>
-      ))}
+      <div>
+        {tabs.map((tab) => (
+          <button
+            className="tab-btn"
+            key={tab.id}
+            onClick={() => setSelectedId(tab.id)}
+          >
+            {tab.header}
+          </button>
+        ))}
+      </div>
       <div key={selectedId}>
         <h3>{selectedTab.header}</h3>
         {selectedTab.content}
