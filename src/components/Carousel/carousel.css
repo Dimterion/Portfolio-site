@@ -19,22 +19,24 @@
 .carousel-img ul li img {
   width: 90vw;
   max-width: 1500px;
-  height: 50vh;
+  height: 60vh;
   object-fit: cover;
   filter: contrast(125%);
 }
 
 .carousel-btn-container {
   text-align: center;
+  margin-bottom: 2vh;
 }
 
 .carousel-btn {
   background-color: var(--tertiaryBackground);
   border-radius: 5px;
-  padding: 15px;
+  padding: 5px 15px;
   border: 1px solid #000;
   cursor: pointer;
   margin: 0 10px;
+  font-weight: bold;
 }
 
 .carousel-btn:hover {

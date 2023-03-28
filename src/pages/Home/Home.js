@@ -25,7 +25,7 @@ function Home() {
         <Link className="link" to="/projects">
           projects
         </Link>{" "}
-        or completed{" "}
+        & completed{" "}
         <Link className="link" to="/studies">
           courses
         </Link>{" "}

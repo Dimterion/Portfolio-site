@@ -27,20 +27,17 @@ function Projects() {
       <div className="misc-container">
         <h3>Misc.</h3>
         <p>
-          - There's also a simple To Do app which can be seen{" "}
-          <Link to="/tasks">here</Link>.
+          - A simple <Link to="/tasks">To Do App</Link> made in several
+          versions.
         </p>
-        <p>
-          - And here is a form to add some text over the image (click the button
-          to open it).
-        </p>
+        <p>- A form to add text for the image.</p>
         <button className="toggleImg-btn" onClick={handleImgToggle}>
-          {!imgActive ? "Open" : "Close"}
+          {!imgActive ? "Open Form" : "Close Form"}
         </button>
         {imgActive && (
           <>
             <p>
-              You can put some text on the image using the <b>Edit text</b>{" "}
+              You can put some text for the image using the <b>Edit Text</b>{" "}
               button below it.
             </p>
             <Form />
@@ -60,7 +57,7 @@ function Projects() {
         </p>
         <>
           <button className="toggleImg-btn" onClick={() => setOpenModal(true)}>
-            Open
+            Open Carousel
           </button>
           <Modal isOpen={openModal}>
             <Carousel />
@@ -70,13 +67,12 @@ function Projects() {
                 setOpenModal(false);
               }}
             >
-              Close
+              Close Carousel
             </button>
           </Modal>
           <h3>Other</h3>
           <p>
-            I've added some more things made outside of the React documentation.
-            You can check them <Link to="/other">here</Link>.
+            <Link to="/other">Examples</Link> outside of the React docs.
           </p>
         </>
       </div>

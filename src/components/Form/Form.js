@@ -20,12 +20,14 @@ function Form() {
   }
 
   return (
-    <div>
+    <div className="mainForm">
       <button className="nextImg-btn" onClick={handleClick}>
-        Change image
+        Change Image
       </button>
       <p>
-        Image {index + 1} out of {images.length}
+        <i>
+          Image {index + 1} out of {images.length}
+        </i>
       </p>
       <div className="image-container">
         <img
@@ -64,7 +66,7 @@ function Form() {
           )}
         </label>
         <button className="editPhrase-btn" type="submit">
-          {isEditing ? "Save" : "Edit"} text
+          {isEditing ? "Save" : "Edit"} Text
         </button>
         <button
           className="clearPhrase-btn"
@@ -74,7 +76,7 @@ function Form() {
             setSecondPart("");
           }}
         >
-          Clear text
+          Clear Text
         </button>
       </form>
     </div>
