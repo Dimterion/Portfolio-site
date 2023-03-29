@@ -1,4 +1,4 @@
-import AddTask from "../../components/AddTaskCombined/AddTaskCombined";
+import AddTaskCombined from "../../components/AddTaskCombined/AddTaskCombined";
 import TaskListCombined from "../../components/TaskListCombined/TaskListCombined";
 import { TasksProvider } from "../../context/Context";
 import "./toDoCombined.css";
@@ -18,7 +18,7 @@ export default function ToDoCombined() {
             Reducer and Context
           </a>
         </h2>
-        <AddTask />
+        <AddTaskCombined />
         <TaskListCombined />{" "}
       </div>
     </TasksProvider>

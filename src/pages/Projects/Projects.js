@@ -20,17 +20,16 @@ function Projects() {
       <h2 className="projectsPage-title">Projects List</h2>
       <FilterableProjectsTable projects={projects} />
       <div className="projectsPage-notes">
-        <i>*Projects description can be seen in the repos Readme</i>
+        <i>* Projects descriptions can be seen in the repos Readme</i>
         <br></br>
-        <i>**Click on the row to highlight it</i>
+        <i>** Click on the row to highlight it</i>
       </div>
       <div className="misc-container">
         <h3>Misc.</h3>
         <p>
-          - A simple <Link to="/tasks">To Do App</Link> made in several
-          versions.
+          - A simple <Link to="/tasks">To Do App</Link> made in several versions
         </p>
-        <p>- A form to add text for the image.</p>
+        <p>- A form to add text for the image</p>
         <button className="toggleImg-btn" onClick={handleImgToggle}>
           {!imgActive ? "Open Form" : "Close Form"}
         </button>
@@ -53,7 +52,6 @@ function Projects() {
           >
             useRef
           </a>
-          .
         </p>
         <>
           <button className="toggleImg-btn" onClick={() => setOpenModal(true)}>
@@ -70,9 +68,8 @@ function Projects() {
               Close Carousel
             </button>
           </Modal>
-          <h3>Other</h3>
           <p>
-            <Link to="/other">Examples</Link> outside of the React docs.
+            - <Link to="/other">Examples</Link> outside of the React docs
           </p>
         </>
       </div>

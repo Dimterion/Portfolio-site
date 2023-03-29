@@ -6,10 +6,10 @@ export default function AddTask({ onAddTask }) {
   const [text, setText] = useState("");
   const dispatch = useTasksDispatch();
   return (
-    <>
+    <div className="addTaskCombined-container">
       <input
         className="addTaskCombined-input"
-        placeholder="Add task"
+        placeholder="Add a new task"
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
@@ -25,10 +25,10 @@ export default function AddTask({ onAddTask }) {
         }}
         disabled={text.length === 0}
       >
-        Add
+        Add Task
       </button>
       {text.length === 0 && <span>Type a task to add.</span>}
-    </>
+    </div>
   );
 }
 

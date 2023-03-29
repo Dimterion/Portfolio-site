@@ -18,7 +18,7 @@ function AddTodo({ onAddTodo }) {
         }}
         disabled={title.length === 0}
       >
-        Add task
+        Add Task
       </button>
       {title.length === 0 && <span>Type a task to add.</span>}
     </div>

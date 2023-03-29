@@ -46,12 +46,14 @@ function Task({ task }) {
     taskContent = (
       <>
         {task.text}
-        <button onClick={() => setIsEditing(true)}>Edit</button>
+        <button className="edit-btn" onClick={() => setIsEditing(true)}>
+          Edit
+        </button>
       </>
     );
   }
   return (
-    <label className="taskListCombined-label">
+    <label>
       <input
         type="checkbox"
         checked={task.done}
@@ -67,6 +69,7 @@ function Task({ task }) {
       />
       {taskContent}
       <button
+        className="delete-btn"
         onClick={() => {
           dispatch({
             type: "deleted",
