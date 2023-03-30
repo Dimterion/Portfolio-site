@@ -13,15 +13,16 @@
   list-style: none;
   white-space: nowrap;
   display: inline;
-  padding: 0.5rem;
+  padding: 0.1rem;
 }
 
 .carousel-img ul li img {
-  width: 90vw;
-  max-width: 1500px;
+  width: 80vw;
+  max-width: 1024px;
   height: 60vh;
   object-fit: cover;
   filter: contrast(125%);
+  border-radius: 5px;
 }
 
 .carousel-btn-container {

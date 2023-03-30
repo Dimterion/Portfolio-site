@@ -29,10 +29,12 @@ function Projects() {
         <p>
           - A simple <Link to="/tasks">To Do App</Link> made in several versions
         </p>
-        <p>- A form to add text for the image</p>
-        <button className="toggleImg-btn" onClick={handleImgToggle}>
-          {!imgActive ? "Open Form" : "Close Form"}
-        </button>
+        <p>
+          - A form to add text for the image {"=> "}
+          <button className="toggleImg-btn" onClick={handleImgToggle}>
+            {!imgActive ? "Open Form" : "Close Form"}
+          </button>
+        </p>
         {imgActive && (
           <>
             <p>
@@ -52,26 +54,25 @@ function Projects() {
           >
             useRef
           </a>
-        </p>
-        <>
+          {" => "}
           <button className="toggleImg-btn" onClick={() => setOpenModal(true)}>
             Open Carousel
           </button>
-          <Modal isOpen={openModal}>
-            <Carousel />
-            <button
-              className="toggleImg-btn"
-              onClick={() => {
-                setOpenModal(false);
-              }}
-            >
-              Close Carousel
-            </button>
-          </Modal>
-          <p>
-            - <Link to="/other">Examples</Link> outside of the React docs
-          </p>
-        </>
+        </p>
+        <Modal isOpen={openModal}>
+          <Carousel />
+          <button
+            className="toggleImg-btn"
+            onClick={() => {
+              setOpenModal(false);
+            }}
+          >
+            Close Carousel
+          </button>
+        </Modal>
+        <p>
+          - <Link to="/other">Examples</Link> outside of the React docs
+        </p>
       </div>
     </>
   );
