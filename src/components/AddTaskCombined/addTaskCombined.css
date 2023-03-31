@@ -1,3 +1,7 @@
+.addTaskCombined-container {
+  border-bottom: 1px solid #000;
+}
+
 .addTaskCombined-input {
   padding: 5px;
   border-radius: 5px;

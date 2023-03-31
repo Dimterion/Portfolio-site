@@ -55,4 +55,6 @@ function tasksReducer(tasks, action) {
   }
 }
 
-const initialTasks = [{ id: 0, text: "Example of a task", done: true }];
+const initialTasks = [
+  { id: 0, text: "This is an example of a task", done: true },
+];
