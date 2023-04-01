@@ -4,12 +4,20 @@ import FilterableProjectsTable from "../../components/FilterableProjectsTable/Fi
 import Form from "../../components/Form/Form";
 import Modal from "../../components/Modal/Modal";
 import Carousel from "../../components/Carousel/Carousel";
+import TabSwitcher from "../../components/TabSwitcher/TabSwitcher";
+import Timer from "../../components/Timer/Timer";
+import Quiz from "../../components/Quiz/Quiz";
 import { projects } from "../../data/projects";
 import "./projects.css";
 
 function Projects() {
   const [imgActive, setImgActive] = useState(false);
   const [openModal, setOpenModal] = useState(false);
+  const [toggle, setToggle] = useState(false);
+
+  function toggleButtons() {
+    setToggle(!toggle);
+  }
 
   function handleImgToggle() {
     setImgActive(!imgActive);
@@ -70,6 +78,32 @@ function Projects() {
             Close Carousel
           </button>
         </Modal>
+        <div className="timerAndQuizButtons">
+          <div className="timerAndQuiz-header">
+            <p>- Timer and Quiz {"=>"}</p>
+            <button className="tab-btn" onClick={() => toggleButtons()}>
+              {!toggle ? "Timer & Quiz" : "Close"}
+            </button>
+          </div>
+          <div>
+            {toggle && (
+              <TabSwitcher
+                tabs={[
+                  {
+                    id: 1,
+                    header: "Quiz",
+                    content: <Quiz />,
+                  },
+                  {
+                    id: 2,
+                    header: "Timer",
+                    content: <Timer />,
+                  },
+                ]}
+              />
+            )}
+          </div>
+        </div>
         <p>
           - <Link to="/other">Examples</Link> outside of the React docs
         </p>

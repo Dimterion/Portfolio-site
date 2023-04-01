@@ -11,7 +11,8 @@ function Quiz() {
     return (
       <div className="quiz-container">
         <h3>Good job on those geography skills!</h3>
-        <p>Here is another picture for you.</p>
+        <p>Here is a picture for you.</p>
+        <br></br>
         <img
           className="quiz-image"
           src={image}
@@ -47,10 +48,8 @@ function Quiz() {
 
   return (
     <>
-      <h3>You do know where Normandy is, right?</h3>
-      <i>
-        Type the country name. Just letters (capital or not doesn't matter).
-      </i>
+      <h4>Do you know where Normandy is?</h4>
+      <i>Type the country name.</i>
       <form onSubmit={handleSubmit}>
         <textarea
           className="quiz-textarea"

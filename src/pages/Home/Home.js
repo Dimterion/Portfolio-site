@@ -1,18 +1,8 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import TabSwitcher from "../../components/TabSwitcher/TabSwitcher";
-import Timer from "../../components/Timer/Timer";
-import Quiz from "../../components/Quiz/Quiz";
 import image from "../../assets/image_sea.jpg";
 import "./home.css";
 
 function Home() {
-  const [toggle, setToggle] = useState(false);
-
-  function toggleButtons() {
-    setToggle(!toggle);
-  }
-
   return (
     <div className="home-container">
       <img
@@ -56,27 +46,6 @@ function Home() {
         </a>
         .
       </p>
-      <div className="homePage-buttons">
-        <button className="tab-btn" onClick={() => toggleButtons()}>
-          {!toggle ? "Timer & Quiz" : "Close"}
-        </button>
-        {toggle && (
-          <TabSwitcher
-            tabs={[
-              {
-                id: 1,
-                header: "Quiz",
-                content: <Quiz />,
-              },
-              {
-                id: 2,
-                header: "Timer",
-                content: <Timer />,
-              },
-            ]}
-          />
-        )}
-      </div>
     </div>
   );
 }

@@ -26,11 +26,3 @@
     width: 60vw;
   }
 }
-
-.homePage-buttons {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  max-width: 350px;
-  margin: auto;
-}

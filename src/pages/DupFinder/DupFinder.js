@@ -65,8 +65,8 @@ function DupFinder() {
           <li key={`${word}-${dup.indexOf(word)}`}>{word}</li>
         ))}
       </ul>
-      <Link className="link other-link" to="/other">
-        Back to the previous page
+      <Link className="link other-link" to="/projects">
+        Other projects
       </Link>
     </section>
   );

@@ -37,3 +37,23 @@
   background-color: var(--hoverColor);
   transition: 0.5s ease-in-out;
 }
+
+.timerAndQuizButtons {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: baseline;
+}
+
+.timerAndQuiz-header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+}
+
+.timerAndQuizButtons p {
+  margin: 0;
+}
+
+.timerAndQuiz-header button {
+  margin: 0 5px;
+}

@@ -21,7 +21,7 @@ function Other() {
       <br></br>
       <br></br>
       <Link className="link other-link" to="/projects">
-        Back to the projects page
+        Projects page
       </Link>
     </div>
   );

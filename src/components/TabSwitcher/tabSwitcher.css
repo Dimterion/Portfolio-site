@@ -1,5 +1,10 @@
+.tabSwitcher {
+  margin-top: 10px;
+}
+
 .tab-btn {
   width: 120px;
+  font-weight: bold;
   margin: 5px 10px;
   cursor: pointer;
   background-color: var(--tertiaryBackground);
@@ -10,8 +15,6 @@
 }
 
 .tab-btn:hover {
-  background-color: var(--background);
-  transition: 1s;
-  box-shadow: 0 3px 3px 0 #000;
-  transform: translateY(-5px);
+  background-color: var(--hoverColor);
+  transition: 0.5s ease-in-out;
 }

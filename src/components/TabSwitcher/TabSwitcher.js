@@ -6,7 +6,7 @@ function TabSwitcher({ tabs }) {
   const selectedTab = tabs.find((tab) => tab.id === selectedId);
 
   return (
-    <>
+    <div className="tabSwitcher">
       <div>
         {tabs.map((tab) => (
           <button
@@ -22,7 +22,7 @@ function TabSwitcher({ tabs }) {
         <h3>{selectedTab.header}</h3>
         {selectedTab.content}
       </div>
-    </>
+    </div>
   );
 }
 

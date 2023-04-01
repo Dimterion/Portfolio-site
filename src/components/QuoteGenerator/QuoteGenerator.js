@@ -24,7 +24,8 @@ function QuoteGenerator() {
 
   return (
     <div className="quoteGenerator-container">
-      <h2>Here is a simple generator that uses API to get a random quote.</h2>
+      <h2>Quotes Generator</h2>
+      <p>A simple generator that makes an API call to get a random quote.</p>
       <button onClick={getQuote}>{buttonName}</button>
       <div>
         {quote && <p className="quoteGenerator-text">{quote}</p>}
