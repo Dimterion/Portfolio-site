@@ -11,19 +11,3 @@
 .footer-container > a {
   margin: 0 5vw;
 }
-
-#portal {
-  color: black;
-  cursor: auto;
-  font-size: 1rem;
-  margin: 0 1rem 0 0;
-  right: 0;
-  position: absolute;
-  top: 1.5rem;
-  transition: 0.5s;
-}
-
-#portal:hover {
-  color: gold;
-  transition: 0.5s;
-}

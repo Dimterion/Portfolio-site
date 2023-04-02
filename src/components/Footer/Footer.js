@@ -30,9 +30,6 @@ function Footer() {
       <a className="link" href="#top">
         <i className="fa-solid fa-angles-up"></i>
       </a>
-      <a id="portal" href="https://the-final-piece.vercel.app/">
-        <i className="fa-solid fa-diamond"></i>
-      </a>
     </footer>
   );
 }
