@@ -11,11 +11,14 @@ function AnimatedBlock() {
       </button>
       {show && (
         <div className="animatedBlock-container">
-          <i>Avatar at the top left corner was made using CSS.</i>
+          <i>This block is animated to slowly appear after opening.</i>
+          <br></br>
+          <br></br>
+          <i>Avatar at the top left corner is made using CSS.</i>
           <br></br>
           <br></br>
           <i>
-            The paragraph with description above was made using{" "}
+            The paragraph with description above is made using{" "}
             <a
               className="link"
               href="https://beta.reactjs.org/learn/passing-data-deeply-with-context"

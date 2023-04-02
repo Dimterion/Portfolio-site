@@ -1,12 +1,12 @@
 .home-container {
-  margin: 5vh 0;
+  margin: 3vh 0;
   text-align: center;
 }
 
 .homePage-image {
-  width: 70vw;
-  max-width: 1500px;
-  height: 40vh;
+  width: 90vw;
+  max-width: 1024px;
+  height: 45vh;
   object-fit: cover;
   border-radius: 5px;
   filter: drop-shadow(5px 5px 5px #000) contrast(125%);
@@ -16,9 +16,11 @@
   background-color: var(--secondaryBackground);
   border-radius: 5px;
   width: 90vw;
+  max-width: 1024px;
   margin: 3vh auto;
-  padding: 10px 5px;
+  padding: 10px;
   font-size: 1.1rem;
+  box-shadow: 2px 2px 2px #000;
 }
 
 @media only screen and (min-width: 992px) {

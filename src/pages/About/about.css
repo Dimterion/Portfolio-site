@@ -1,6 +1,6 @@
 .aboutPage-container {
   text-align: center;
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 
 .aboutPage-container > h3 {
@@ -9,9 +9,9 @@
 }
 
 .aboutPage-image {
-  width: 70vw;
-  max-width: 1500px;
-  height: 40vh;
+  width: 90vw;
+  max-width: 1024px;
+  height: 45vh;
   object-fit: cover;
   border-radius: 5px;
   filter: drop-shadow(5px 5px 5px #000) contrast(125%);

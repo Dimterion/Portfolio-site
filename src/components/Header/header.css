@@ -16,7 +16,7 @@
 .date-container {
   text-align: center;
   background-color: var(--secondaryBackground);
-  width: 350px;
+  width: 300px;
   border-radius: 5px;
   margin: 10px auto;
   padding: 5px;
@@ -34,6 +34,6 @@
   }
 
   .date-container {
-    width: 200px;
+    width: auto;
   }
 }
