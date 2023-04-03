@@ -5,10 +5,10 @@ import "./tasks.css";
 function Tasks() {
   return (
     <>
-      <h2 className="tasks-header">A Simple To Do App</h2>
+      <h2 className="tasks-header">To Do App</h2>
       <TasksDropdown />
       <Link className="tasks-link" to="/projects">
-        Projects page
+        {">>>"} Projects page
       </Link>
     </>
   );

@@ -1,5 +1,8 @@
 .tabSwitcher {
-  margin-top: 10px;
+  margin: 10px auto 0;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
 }
 
 .tab-btn {

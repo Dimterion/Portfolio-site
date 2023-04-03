@@ -8,7 +8,7 @@ export default function ToDoCombined() {
     <TasksProvider>
       <div className="tasksCombined-container">
         <h2>
-          Here is a simple ToDo app that uses React{" "}
+          Here is a simple To Do app that uses React{" "}
           <a
             className="link"
             href="https://beta.reactjs.org/learn/scaling-up-with-reducer-and-context"

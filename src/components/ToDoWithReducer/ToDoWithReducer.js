@@ -37,7 +37,7 @@ function ToDoWithReducer() {
   return (
     <div className="toDoWithReducer-container">
       <h2>
-        Here is a simple ToDo app that uses React{" "}
+        Here is a simple To Do app that uses React{" "}
         <a
           className="link"
           href="https://beta.reactjs.org/learn/extracting-state-logic-into-a-reducer"

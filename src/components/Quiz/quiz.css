@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.quiz-container h3 {
+  margin-top: 0;
+}
+
 .quiz-textarea {
   margin: 10px auto;
   border-radius: 5px;
@@ -15,6 +19,7 @@
   border: 1px solid #000;
   padding: 5px;
   cursor: pointer;
+  margin-bottom: 10px;
 }
 
 .quiz-button:hover {
@@ -27,9 +32,9 @@
 }
 
 .quiz-image {
-  width: 90vw;
-  max-width: 1000px;
-  height: 60vh;
+  width: 80vw;
+  max-width: 768px;
+  height: 50vh;
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 20px;
