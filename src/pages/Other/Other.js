@@ -10,18 +10,20 @@ function Other() {
       <QuoteGenerator />
       <ApiInfo />
       <TextLoop />
+      <br></br>
+      <br></br>
       <Link className="link other-link" to="/jschallenges">
-        Examples of coding challenges
+        {">>> "}Examples of coding challenges
       </Link>
       <br></br>
       <br></br>
       <Link className="link other-link" to="/dup-finder">
-        Duplicate words finder
+        {">>> "}Duplicate words finder
       </Link>
       <br></br>
       <br></br>
       <Link className="link other-link" to="/projects">
-        Projects page
+        {">>> "}Projects page
       </Link>
     </div>
   );

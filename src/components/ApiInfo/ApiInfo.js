@@ -24,7 +24,7 @@ function ApiInfo() {
           rel="noopener noreferrer"
         >
           Fetch
-        </a>{" "}
+        </a>
         .
       </p>
       <details>
