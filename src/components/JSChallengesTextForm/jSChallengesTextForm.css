@@ -1,11 +1,5 @@
 .jsChallenges-container {
   text-align: center;
-  margin: 0 1vw 3vh;
-}
-
-.jsChallenges-container h4 {
-  text-align: left;
-  margin-left: 9vw;
 }
 
 .jsChallenges-container button {
@@ -20,10 +14,12 @@
   margin: 0 0 1vh;
   height: 10vh;
   width: 80vw;
+  max-width: 1024px;
   font-family: "Inter", sans-serif;
   font-size: 1rem;
   border-radius: 5px;
   background-color: var(--secondaryBackground);
+  padding: 5px;
 }
 
 .jsChallenges-buttons-container {

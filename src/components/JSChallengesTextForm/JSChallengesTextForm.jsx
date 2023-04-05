@@ -3,15 +3,16 @@ import { scream, capEveryOtherChar, removeDup } from "../../utils/jschallenges";
 import "./jSChallengesTextForm.css";
 
 function JSChallengesTextForm() {
-  const [text, setText] = useState("Type something");
+  const [text, setText] = useState("");
 
   return (
     <div className="jsChallenges-container">
       <div>
         <h3>Text Edit Form</h3>
-        <h4>A simple form to modify text input</h4>
+        <h4>A form to modify text input</h4>
         <form>
           <textarea
+            placeholder="Type something"
             className="jsChallenges-text-input"
             value={text}
             onChange={(e) => {

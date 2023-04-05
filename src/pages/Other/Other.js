@@ -13,12 +13,12 @@ function Other() {
       <br></br>
       <br></br>
       <Link className="link other-link" to="/jschallenges">
-        {">>> "}Examples of coding challenges
+        {">>> "}Text Edit Form
       </Link>
       <br></br>
       <br></br>
       <Link className="link other-link" to="/dup-finder">
-        {">>> "}Duplicate words finder
+        {">>> "}Duplicate Words Finder
       </Link>
       <br></br>
       <br></br>

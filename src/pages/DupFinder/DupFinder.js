@@ -40,7 +40,7 @@ function DupFinder() {
 
   return (
     <section className="dupFinder-container">
-      <h2>Duplicates Finder</h2>
+      <h3>Duplicates Finder</h3>
       <p>Find duplicate words in your text</p>
       <form>
         <textarea
@@ -66,7 +66,7 @@ function DupFinder() {
         ))}
       </ul>
       <Link className="link other-link" to="/projects">
-        Other projects
+        {">>> "}Projects page
       </Link>
     </section>
   );

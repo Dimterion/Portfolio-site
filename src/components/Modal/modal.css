@@ -6,3 +6,7 @@
   text-align: center;
   background-color: var(--secondaryBackground);
 }
+
+.carousel-modal::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
