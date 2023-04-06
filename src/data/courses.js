@@ -1,4 +1,4 @@
-import osCourseLogo from "../assets/os_react_course_logo.png";
+import osCourseLogo from "../assets/os_react_course_logo.PNG";
 import udemyCourseLogo from "../assets/udemy_react_course_logo.jpg";
 import scrimbaCoursesLogo from "../assets/scrimba_courses_logo.png";
 import codecademyCoursesLogo from "../assets/codecademy_courses_logo.PNG";
