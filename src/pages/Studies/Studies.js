@@ -32,23 +32,19 @@ function Courses() {
 
   return (
     <div className="studiesPage-container">
-      <h2>Here you can see the courses I've completed</h2>
-      <button className="nav-btn" onClick={handlePreviousClick}>
-        <i className="fa-solid fa-angle-left"></i>
-      </button>
-      <button className="nav-btn" onClick={handleNextClick}>
-        <i className="fa-solid fa-angle-right"></i>
-      </button>
-      <h3>
-        <i>Platform: {course.platform}</i>
-        <p>Course: {course.name}</p>
+      <h2>Completed Courses</h2>
+      <div>
         <img className="course-image" src={course.image} alt={course.name} />
-      </h3>
+      </div>
       <button className="details-btn" onClick={handleShowDetails}>
-        {showDetails ? "Hide" : "Show"} details
+        {showDetails ? "Hide" : "Show"} Details
       </button>
       {showDetails && (
         <div className="details-container">
+          <h3>Platform: {course.platform}</h3>
+          <p>
+            <b>Program:</b> {course.name}
+          </p>
           <p>{course.info}</p>
           <div className="links-container">
             <a
@@ -73,6 +69,12 @@ function Courses() {
       <h3>
         ({index + 1} of {courses.length})
       </h3>
+      <button className="nav-btn" onClick={handlePreviousClick}>
+        <i className="fa-solid fa-angle-left"></i>
+      </button>
+      <button className="nav-btn" onClick={handleNextClick}>
+        <i className="fa-solid fa-angle-right"></i>
+      </button>
     </div>
   );
 }

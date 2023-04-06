@@ -30,6 +30,7 @@
   font-weight: bold;
   font-size: 1rem;
   width: 150px;
+  margin-top: 20px;
 }
 
 .details-btn:hover {
@@ -54,23 +55,20 @@
 }
 
 .course-image {
-  object-fit: cover;
-  max-width: 250px;
-  max-height: 200px;
-  border-radius: 5px;
+  object-fit: contain;
+  width: 550px;
+  height: 600px;
+  max-width: 90vw;
+  max-height: 50vh;
   filter: drop-shadow(5px 5px 5px #000);
 }
 
 .details-container {
   margin: 20px auto 0;
   border: 1px solid #000;
-  width: 80vw;
+  width: 550px;
+  max-width: 90vw;
   border-radius: 5px;
-}
-
-.details-container p {
-  font-weight: bold;
-  font-style: italic;
 }
 
 .links-container {
