@@ -9,7 +9,7 @@ function JSChallengesTextForm() {
     <div className="jsChallenges-container">
       <div>
         <h3>Text Edit Form</h3>
-        <h4>A form to modify text input</h4>
+        <p>A form to modify text input</p>
         <form>
           <textarea
             placeholder="Type something"

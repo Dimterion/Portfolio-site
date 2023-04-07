@@ -18,14 +18,14 @@
 
 .animatedBlock-container {
   color: #000;
-  padding: 25px;
+  padding: 25px 0;
   text-align: center;
   background-image: radial-gradient(
     circle,
     var(--tertiaryBackground) 0%,
     var(--background) 100%
   );
-  width: 60vw;
+  width: 90vw;
   max-width: 1024px;
   margin: auto;
   animation: fadeIn 1000ms;

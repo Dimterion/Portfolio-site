@@ -1,6 +1,7 @@
 .aboutPage-container {
   text-align: center;
-  margin-top: 3vh;
+  margin: 3vh auto;
+  max-width: 1024px;
 }
 
 .aboutPage-container > h3 {
