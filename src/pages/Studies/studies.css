@@ -69,6 +69,7 @@
   width: 550px;
   max-width: 90vw;
   border-radius: 5px;
+  background-color: var(--secondaryBackground);
 }
 
 .links-container {
@@ -79,7 +80,7 @@
 .course-link {
   color: #000;
   transition: 0.5s;
-  margin: 1vh 0;
+  margin: 1vh auto;
   font-style: italic;
 }
 

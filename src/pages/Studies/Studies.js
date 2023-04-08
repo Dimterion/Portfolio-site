@@ -45,7 +45,9 @@ function Courses() {
           <p>
             <b>Program:</b> {course.name}
           </p>
-          <p>{course.info}</p>
+          <p>
+            <b>Info:</b> {course.info}
+          </p>
           <div className="links-container">
             <a
               className="course-link"
@@ -53,7 +55,7 @@ function Courses() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Link to the projects
+              {"> "}Projects list
             </a>
             <a
               className="course-link"
@@ -61,14 +63,14 @@ function Courses() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Link to the platform
+              {"> "}Platform site
             </a>
           </div>
         </div>
       )}
-      <h3>
+      <p>
         ({index + 1} of {courses.length})
-      </h3>
+      </p>
       <button className="nav-btn" onClick={handlePreviousClick}>
         <i className="fa-solid fa-angle-left"></i>
       </button>
