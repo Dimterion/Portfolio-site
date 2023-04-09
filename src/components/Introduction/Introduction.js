@@ -7,8 +7,8 @@ function Introduction() {
     <Section>
       <Heading>Hi! I'm Dmitrii</Heading>
       <SubHeading
-        title="I live in France and learn Web Development, focusing on Front-End (with some bits of Back-End)."
-        body="This small site was made in order to learn React using its oficial documentation. I'm mostly testing some of the techniques rather than making everything ideal."
+        title="I'm interested in Web Development, focusing on Front-End (with some bits of Back-End)."
+        body="This small site was made in order to learn React using its oficial documentation. I'm mostly testing some of the techniques here rather than making everything ideal."
       />
     </Section>
   );

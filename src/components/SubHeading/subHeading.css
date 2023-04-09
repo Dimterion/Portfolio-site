@@ -1,0 +1,8 @@
+.subHeading-container {
+  background-color: var(--secondaryBackground);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #000;
+  max-width: 90vw;
+  margin: auto;
+  padding: 1px 5px;
+}

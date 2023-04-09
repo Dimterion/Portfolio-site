@@ -56,11 +56,10 @@
 
 .course-image {
   object-fit: contain;
-  width: 550px;
-  height: 600px;
   max-width: 90vw;
-  max-height: 50vh;
+  max-height: 45vh;
   filter: drop-shadow(5px 5px 5px #000);
+  border-radius: 5px;
 }
 
 .details-container {
