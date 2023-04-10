@@ -7,11 +7,13 @@ function AnimatedBlock() {
   return (
     <>
       <button className="funFacts-btn" onClick={() => setShow(!show)}>
-        {show ? "Close" : "Fun Facts"}
+        {show ? "Close" : "A Few Details"}
       </button>
       {show && (
         <div className="animatedBlock-container">
-          <i>This block is animated to slowly appear after opening.</i>
+          <i>
+            This block component is animated to slowly appear after opening.
+          </i>
           <br></br>
           <br></br>
           <i>Avatar at the top left corner is made using CSS.</i>
@@ -31,14 +33,18 @@ function AnimatedBlock() {
           </i>
           <br></br>
           <br></br>
-          <a
-            className="link"
-            href="https://medium.com/@dimterion"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            I write stories on Medium every Friday
-          </a>
+          <i>
+            I write stories on{" "}
+            <a
+              className="link"
+              href="https://medium.com/@dimterion"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Medium
+            </a>{" "}
+            every Friday
+          </i>
         </div>
       )}
     </>

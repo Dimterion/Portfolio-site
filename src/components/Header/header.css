@@ -5,7 +5,7 @@
   text-align: center;
   justify-content: space-between;
   background-color: var(--secondaryBackground);
-  padding: 1vh 2vw;
+  padding: 0.5vh 1vw;
   border-bottom: 2px solid #000;
 }
 
@@ -26,6 +26,7 @@
 
 @media only screen and (max-width: 762px) {
   .header-container {
+    flex-flow: column wrap;
     justify-content: center;
   }
 
