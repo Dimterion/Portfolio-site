@@ -4,7 +4,7 @@ import "./home.css";
 
 function Home() {
   return (
-    <div className="home-container">
+    <div className="home-container page-loading">
       <img
         className="homePage-image"
         src={image}

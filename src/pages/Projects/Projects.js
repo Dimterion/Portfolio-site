@@ -24,7 +24,7 @@ function Projects() {
   }
 
   return (
-    <>
+    <div className="page-loading">
       <h2 className="projectsPage-title">Projects List</h2>
       <FilterableProjectsTable projects={projects} />
       <div className="projectsPage-notes">
@@ -108,7 +108,7 @@ function Projects() {
           - <Link to="/other">Examples</Link> outside of the React docs
         </p>
       </div>
-    </>
+    </div>
   );
 }
 

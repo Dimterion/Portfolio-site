@@ -22,7 +22,7 @@ function App() {
         <Route path="tasks" element={<Tasks />} />
         <Route path="studies" element={<Studies />} />
         <Route path="other" element={<Other />} />
-        <Route path="jschallenges" element={<JsChallenges />} />
+        <Route path="text-edit-form" element={<JsChallenges />} />
         <Route path="dup-finder" element={<DupFinder />} />
       </Routes>
       <Footer />

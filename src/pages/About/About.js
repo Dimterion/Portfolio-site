@@ -5,7 +5,7 @@ import "./about.css";
 
 function About() {
   return (
-    <div className="aboutPage-container">
+    <div className="aboutPage-container page-loading">
       <img className="aboutPage-image" src={image} alt="Park in Paris" />
       <Introduction />
       <AnimatedBlock />

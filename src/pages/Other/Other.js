@@ -6,13 +6,13 @@ import "./other.css";
 
 function Other() {
   return (
-    <div>
+    <div className="page-loading">
       <QuoteGenerator />
       <ApiInfo />
       <TextLoop />
       <br></br>
       <br></br>
-      <Link className="link other-link" to="/jschallenges">
+      <Link className="link other-link" to="/text-edit-form">
         {">>> "}Text Edit Form
       </Link>
       <br></br>

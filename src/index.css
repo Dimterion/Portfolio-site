@@ -5,6 +5,9 @@
   --hoverColor: #6b9080;
   --alertColor: #e63946;
   --editColor: #219ebc;
+  --load-time: 50ms;
+  --next-load-time: 50ms;
+  --load-delay: calc(var(--load-time) + var(--next-load-time));
   scroll-behavior: smooth;
 }
 
@@ -18,4 +21,24 @@ body {
 p::selection {
   background-color: #333;
   color: #fff;
+}
+
+/* Pages loading animation*/
+.page-loading {
+  animation: load 300ms ease-in calc(var(--load-delay) + 200ms);
+  animation-fill-mode: forwards;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+@keyframes load {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }

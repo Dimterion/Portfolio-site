@@ -39,7 +39,7 @@ function DupFinder() {
   }
 
   return (
-    <section className="dupFinder-container">
+    <section className="dupFinder-container page-loading">
       <h3>Duplicates Finder</h3>
       <p>Find duplicate words in your text</p>
       <form>

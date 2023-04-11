@@ -31,7 +31,7 @@ function Courses() {
   }
 
   return (
-    <div className="studiesPage-container">
+    <div className="studiesPage-container page-loading">
       <h2>Completed Courses</h2>
       <div>
         <img className="course-image" src={course.image} alt={course.name} />
