@@ -10,6 +10,7 @@ import Other from "./pages/Other/Other";
 import JsChallenges from "./pages/JsChallenges/JsChallenges";
 import Footer from "./components/Footer/Footer";
 import DupFinder from "./pages/DupFinder/DupFinder";
+import Tenzies from "./pages/Tenzies/Tenzies";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="other" element={<Other />} />
         <Route path="text-edit-form" element={<JsChallenges />} />
         <Route path="dup-finder" element={<DupFinder />} />
+        <Route path="tenzies" element={<Tenzies />} />
       </Routes>
       <Footer />
     </BrowserRouter>

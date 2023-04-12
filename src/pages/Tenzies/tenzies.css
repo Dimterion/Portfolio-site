@@ -1,0 +1,54 @@
+.tenzies-section {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--tertiaryBackground);
+  width: 95vw;
+  height: fit-content;
+  max-width: 768px;
+  margin: 2vh auto;
+  padding: 5vh 0;
+  border-radius: 10px;
+}
+
+.tenziesElements-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.rollDice-btn {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--secondaryBackground);
+  border: 1px solid #000;
+  color: #000;
+  transition: 0.5s;
+}
+
+.rollDice-btn:hover {
+  background-color: var(--hoverColor);
+  transition: 0.5s;
+}
+
+.rollDice-btn:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.game-title {
+  margin: 1vh;
+}
+
+.game-instructions {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.tenzies-completion-container {
+  text-align: center;
+  margin: 10px 20px;
+}
