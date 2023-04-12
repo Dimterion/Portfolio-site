@@ -7,20 +7,18 @@ import "./header.css";
 
 function Header() {
   return (
-    <>
-      <header className="header-container">
-        <Avatar />
-        <div>
-          <h1>Dimterion's Projects & Studies</h1>
-          <div className="date-container">
-            <span>Today is: {formatDate()}</span>
-            <Clock />
-            <NetworkCheck />
-          </div>
+    <header className="header-container">
+      <Avatar />
+      <div>
+        <h1>Dimterion's Projects & Studies</h1>
+        <div className="date-container">
+          <span>Today is: {formatDate()}</span>
+          <Clock />
+          <NetworkCheck />
         </div>
-        <Navbar />
-      </header>
-    </>
+      </div>
+      <Navbar />
+    </header>
   );
 }
 

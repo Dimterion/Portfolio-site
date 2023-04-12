@@ -7,6 +7,17 @@
   background-color: var(--secondaryBackground);
   padding: 0.5vh 1vw;
   border-bottom: 2px solid #000;
+  animation: header-load 400ms ease-in;
+}
+
+@keyframes header-load {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .header-container h1 {

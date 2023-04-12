@@ -6,6 +6,17 @@
   width: 100%;
   padding: 5px;
   text-align: center;
+  animation: footer-load 600ms ease-in;
+}
+
+@keyframes footer-load {
+  0% {
+    transform: translateY(200%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .footer-container > a {
