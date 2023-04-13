@@ -9,7 +9,8 @@
   max-width: 768px;
   margin: 2vh auto;
   padding: 5vh 0;
-  border-radius: 10px;
+  border-radius: 5px;
+  filter: drop-shadow(5px 5px 5px #000) contrast(125%);
 }
 
 .tenziesElements-container {
@@ -51,4 +52,8 @@
 .tenzies-completion-container {
   text-align: center;
   margin: 10px 20px;
+}
+
+.tenzies-results-container {
+  padding: 0;
 }

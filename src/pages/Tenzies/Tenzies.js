@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import TenzieElement from "../../components/TenzieElement/TenzieElement";
 import { nanoid } from "nanoid";
 import "./tenzies.css";
@@ -13,6 +14,7 @@ function TenziesGame() {
   const [results, setResults] = useState(
     JSON.parse(localStorage.getItem("results")) || []
   );
+  const [disableSaveBtn, setDisableSaveBtn] = useState(false);
 
   useEffect(() => {
     const allHeld = tenzies.every((tenzie) => tenzie.isHeld);
@@ -97,6 +99,7 @@ function TenziesGame() {
       setStart(false);
       clearInterval(intervalId);
       setTimer(0);
+      setDisableSaveBtn(false);
     }
   }
 
@@ -112,71 +115,90 @@ function TenziesGame() {
     }
 
     setResults((prevResults) => [newResult, ...prevResults]);
+
+    setDisableSaveBtn(true);
   }
 
   function clearResults() {
     localStorage.clear();
     setResults([{ count: "", timer: "" }]);
+    setDisableSaveBtn(false);
   }
 
   const resultsToDisplay = results.map(
     (result) =>
       result.count !== "" && (
         <li key={nanoid()}>
-          <b>Number of rolls:</b>
+          <b>Rolls: </b>
           {result.count}
           <br></br>
-          <b>Time:</b>
-          {result.timer}
+          <b>Time: </b>
+          {result.timer} (sec.)
         </li>
       )
   );
 
   return (
-    <section className="tenzies-section page-loading">
-      <h1 className="game-title">Tenzies</h1>
-      <div className="game-instructions">
-        Roll until all dice are the same. Click each die to freeze it at its
-        current value between rolls.
-        <br></br>
-        <br></br>
-        <div>
-          <b>Number of rolls:</b> {count}
+    <>
+      <section className="tenzies-section page-loading">
+        <h1 className="game-title">Tenzies</h1>
+        <div className="game-instructions">
+          Roll until all dice are the same. Click each die to freeze it at its
+          current value between rolls.
           <br></br>
           <br></br>
-          <b>Timer:</b> {timer}
+          <div>
+            <b>Rolls:</b> {count}
+            <br></br>
+            <br></br>
+            <b>Timer:</b> {timer} (sec.)
+          </div>
+          <br></br>
         </div>
-      </div>
-      <div className="tenziesElements-container">{finalArray}</div>
-      {start ? (
-        <button onClick={roll} className="rollDice-btn">
-          {gameState ? "New Game" : "Roll"}
-        </button>
-      ) : (
-        <button onClick={startGame} className="rollDice-btn">
-          Start
-        </button>
-      )}
-      {gameState && (
-        <div className="tenzies-completion-container">
-          <p>
-            Yay! You've completed the game. You can save your results (number of
-            rolls and time) to the local storage of your current browser. Five
-            last saved results will be displayed on the page (first one is the
-            latest).
-          </p>
-          <button onClick={saveResults} className="rollDice-btn">
-            Save
+        <div className="tenziesElements-container">{finalArray}</div>
+        <br></br>
+        {start ? (
+          <button onClick={roll} className="rollDice-btn">
+            {gameState ? "New Game" : "Roll"}
           </button>
-        </div>
-      )}
-      {<ol>{resultsToDisplay}</ol>}
-      {resultsToDisplay[0] !== false && resultsToDisplay[0] !== undefined && (
-        <button onClick={clearResults} className="rollDice-btn">
-          Clear
-        </button>
-      )}
-    </section>
+        ) : (
+          <button onClick={startGame} className="rollDice-btn">
+            Start
+          </button>
+        )}
+        {gameState && (
+          <div className="tenzies-completion-container">
+            <p>
+              Yay! You've completed the game. You can save your results (number
+              of rolls and time) to the local storage of your current browser.
+              Five last saved results will be displayed on the page (first one
+              is the latest).
+            </p>
+            <button
+              disabled={disableSaveBtn}
+              onClick={saveResults}
+              className="rollDice-btn"
+            >
+              Save
+            </button>
+          </div>
+        )}
+        <h3>Your previous results</h3>
+        {<ol className="tenzies-results-container">{resultsToDisplay}</ol>}
+        {resultsToDisplay[0] !== false && resultsToDisplay[0] !== undefined ? (
+          <button onClick={clearResults} className="rollDice-btn">
+            Clear
+          </button>
+        ) : (
+          <p>Nothing has been saved so far</p>
+        )}
+      </section>
+      <br></br>
+      <br></br>
+      <Link className="link other-link" to="/projects">
+        {">>> "}Projects page
+      </Link>
+    </>
   );
 }
 

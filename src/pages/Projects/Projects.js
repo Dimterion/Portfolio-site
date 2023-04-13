@@ -107,6 +107,9 @@ function Projects() {
         <p>
           - <Link to="/other">Examples</Link> outside of the React docs
         </p>
+        <p>
+          - <Link to="/tenzies">Tenzies Game</Link>
+        </p>
       </div>
     </div>
   );
