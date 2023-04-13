@@ -147,14 +147,12 @@ function TenziesGame() {
           at its current value between rolls.<br></br>Click start to begin.
           <br></br>
           <br></br>
-          <div>
+          <div className="stats-container">
             <b>Rolls: </b>
             {count}
             <br></br>
-            <b>Timer: </b>
-            {timer}
-            <br></br>
-            (sec.)
+            <b>Time: </b>
+            {timer} (s)
           </div>
           <br></br>
         </div>

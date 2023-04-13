@@ -15,6 +15,20 @@
   flex: 0 0 auto;
 }
 
+.tenzieElement {
+  animation: rotate 0.5s ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .tenzieElement:hover {
   transform: translateY(1px);
 }
