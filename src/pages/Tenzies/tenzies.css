@@ -77,3 +77,12 @@
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
 }
+
+.reward-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  max-width: 90vw;
+  max-height: 70vh;
+  border-radius: 5px;
+}

@@ -15,6 +15,8 @@ function TenziesGame() {
     JSON.parse(localStorage.getItem("results")) || []
   );
   const [disableSaveBtn, setDisableSaveBtn] = useState(false);
+  const [rewardImg, setRewardImg] = useState("");
+  const [url, setUrl] = useState("");
 
   useEffect(() => {
     const allHeld = tenzies.every((tenzie) => tenzie.isHeld);
@@ -25,6 +27,10 @@ function TenziesGame() {
       setGameState(true);
       clearInterval(intervalId);
     }
+
+    fetch("https://dog.ceo/api/breeds/image/random")
+      .then((res) => res.json())
+      .then((data) => setRewardImg(data));
 
     if (timer > 600) {
       setGameState(false);
@@ -43,6 +49,7 @@ function TenziesGame() {
       setTimer((timer) => timer + 1);
     }, 1000);
     setIntervalId(id);
+    setUrl(rewardImg.message);
   }
 
   function generateNewTenzie() {
@@ -169,11 +176,19 @@ function TenziesGame() {
         )}
         {gameState && (
           <div className="tenzies-completion-container">
+            <b>
+              Yay! You've completed the game! Congratulations! Here's a doggy
+              for you.
+            </b>
+            <br></br>
+            <br></br>
+            <img src={url} alt="Random dog" className="reward-img" />
+            <br></br>
+            <br></br>
             <p>
-              Yay! You've completed the game. You can save your results (number
-              of rolls and time) to the local storage of your current browser.
-              Last five saved results will be displayed on the page (first one
-              is the latest).
+              You can save your results (number of rolls and time) to the local
+              storage of your current browser. Last five saved results will be
+              displayed on the page (first one is the latest).
             </p>
             <button
               disabled={disableSaveBtn}
