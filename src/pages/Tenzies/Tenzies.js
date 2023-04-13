@@ -143,15 +143,18 @@ function TenziesGame() {
       <section className="tenzies-section page-loading">
         <h1 className="game-title">Tenzies</h1>
         <div className="game-instructions">
-          Roll until all dice are the same. Click each die to freeze it at its
-          current value between rolls.
+          Roll until all dice are the same.<br></br>Click each die to freeze it
+          at its current value between rolls.<br></br>Click start to begin.
           <br></br>
           <br></br>
           <div>
-            <b>Rolls:</b> {count}
+            <b>Rolls: </b>
+            {count}
             <br></br>
+            <b>Timer: </b>
+            {timer}
             <br></br>
-            <b>Timer:</b> {timer} (sec.)
+            (sec.)
           </div>
           <br></br>
         </div>
@@ -171,7 +174,7 @@ function TenziesGame() {
             <p>
               Yay! You've completed the game. You can save your results (number
               of rolls and time) to the local storage of your current browser.
-              Five last saved results will be displayed on the page (first one
+              Last five saved results will be displayed on the page (first one
               is the latest).
             </p>
             <button
@@ -183,7 +186,8 @@ function TenziesGame() {
             </button>
           </div>
         )}
-        <h3>Your previous results</h3>
+        <h3>Previous results</h3>
+        <p>(starting from the latest one)</p>
         {<ol className="tenzies-results-container">{resultsToDisplay}</ol>}
         {resultsToDisplay[0] !== false && resultsToDisplay[0] !== undefined ? (
           <button onClick={clearResults} className="rollDice-btn">
