@@ -148,7 +148,7 @@ function TenziesGame() {
   return (
     <>
       <section className="tenzies-section page-loading">
-        <h1 className="game-title">Tenzies</h1>
+        <h1 className="game-title">Dice Game</h1>
         <div className="game-instructions">
           Roll until all dice are the same.<br></br>Click each die to freeze it
           at its current value between rolls.<br></br>Click start to begin.
@@ -210,6 +210,16 @@ function TenziesGame() {
           <p>Nothing has been saved so far</p>
         )}
       </section>
+      <br></br>
+      <br></br>
+      <a
+        className="link other-link"
+        href="https://medium.com/@dimterion/dice-game-in-react-de4019e69354"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {">>> "}Additional Info
+      </a>
       <br></br>
       <br></br>
       <Link className="link other-link" to="/projects">
