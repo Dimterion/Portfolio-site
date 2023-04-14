@@ -159,7 +159,7 @@ function TenziesGame() {
             {count}
             <br></br>
             <b>Time: </b>
-            {timer} (s)
+            {timer} (sec.)
           </div>
           <br></br>
         </div>
