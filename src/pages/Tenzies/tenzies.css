@@ -11,6 +11,7 @@
   padding: 2vh 0;
   border-radius: 5px;
   filter: drop-shadow(5px 5px 5px #000) contrast(125%);
+  font-family: cursive;
 }
 
 .tenzies-section h3 {
@@ -28,11 +29,13 @@
 
 .stats-container {
   margin: auto;
-  width: fit-content;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  width: 125px;
+  max-width: 90vw;
+  border: 1px solid #000;
+  border-radius: 5px;
   padding: 5px 10px;
   text-align: start;
+  background-color: var(--secondaryBackground);
 }
 
 .rollDice-btn {
@@ -45,7 +48,8 @@
   background-color: var(--secondaryBackground);
   border: 2px solid #000;
   transition: 0.5s;
-  width: 120px;
+  width: 130px;
+  font-family: cursive;
 }
 
 .rollDice-btn:hover {

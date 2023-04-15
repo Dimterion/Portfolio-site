@@ -72,7 +72,7 @@ function TenziesGame() {
     return (
       <TenzieElement
         key={tenzie.id}
-        value={start ? tenzie.value : ""}
+        value={start ? tenzie.value : 0}
         isHeld={tenzie.isHeld}
         holdTenzie={start ? () => holdTenzie(tenzie.id) : () => null}
       />
@@ -140,7 +140,7 @@ function TenziesGame() {
           {result.count}
           <br></br>
           <b>Time: </b>
-          {result.timer} (sec.)
+          {result.timer}s.
         </li>
       )
   );
@@ -150,8 +150,8 @@ function TenziesGame() {
       <section className="tenzies-section page-loading">
         <h1 className="game-title">Dice Game</h1>
         <div className="game-instructions">
-          Roll until all dice are the same.<br></br>Click each die to freeze it
-          at its current value between rolls.<br></br>Click start to begin.
+          Roll until all dice are the same.<br></br>Click each dice to freeze
+          it.<br></br>Click Start to begin.
           <br></br>
           <br></br>
           <div className="stats-container">
@@ -159,7 +159,7 @@ function TenziesGame() {
             {count}
             <br></br>
             <b>Time: </b>
-            {timer} (sec.)
+            {timer}s.
           </div>
           <br></br>
         </div>
@@ -200,14 +200,14 @@ function TenziesGame() {
           </div>
         )}
         <h3>Previous results</h3>
-        <p>(starting from the latest one)</p>
+        <small>(starting from the latest one)</small>
         {<ol className="tenzies-results-container">{resultsToDisplay}</ol>}
         {resultsToDisplay[0] !== false && resultsToDisplay[0] !== undefined ? (
           <button onClick={clearResults} className="rollDice-btn">
             Clear
           </button>
         ) : (
-          <p>Nothing has been saved so far</p>
+          <small>Nothing has been saved so far</small>
         )}
       </section>
       <br></br>
