@@ -152,8 +152,6 @@ function TenziesGame() {
         <div className="game-instructions">
           Roll until all dice are the same.<br></br>Click each dice to freeze
           it.<br></br>Click Start to begin.
-          <br></br>
-          <br></br>
           <div className="stats-container">
             <b>Rolls: </b>
             {count}
@@ -176,19 +174,16 @@ function TenziesGame() {
         )}
         {gameState && (
           <div className="tenzies-completion-container">
-            <b>
-              Yay! You've completed the game! Congratulations! Here's a doggy
-              for you.
-            </b>
+            <b>Yay! You've completed the game! Congratulations!</b>
             <br></br>
             <br></br>
             <img src={url} alt="Random dog" className="reward-img" />
             <br></br>
             <br></br>
             <p>
-              You can save your results (number of rolls and time) to the local
-              storage of your current browser. Last five saved results will be
-              displayed on the page (first one is the latest).
+              You can save your results (rolls and time) to the local storage of
+              your browser.<br></br>Last five saved results will be displayed
+              below (starting from the latest).
             </p>
             <button
               disabled={disableSaveBtn}
@@ -209,22 +204,20 @@ function TenziesGame() {
         ) : (
           <small>Nothing has been saved so far</small>
         )}
+        <div className="tenzies-links">
+          <Link className="link other-link" to="/projects">
+            {">>> "}Projects page
+          </Link>
+          <a
+            className="link other-link"
+            href="https://medium.com/@dimterion/dice-game-in-react-de4019e69354"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {">>> "}Additional info
+          </a>
+        </div>
       </section>
-      <br></br>
-      <br></br>
-      <a
-        className="link other-link"
-        href="https://medium.com/@dimterion/dice-game-in-react-de4019e69354"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        {">>> "}Additional Info
-      </a>
-      <br></br>
-      <br></br>
-      <Link className="link other-link" to="/projects">
-        {">>> "}Projects page
-      </Link>
     </>
   );
 }

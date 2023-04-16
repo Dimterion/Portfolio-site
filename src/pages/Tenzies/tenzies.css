@@ -28,7 +28,7 @@
 }
 
 .stats-container {
-  margin: auto;
+  margin: 2vh auto 0;
   width: 125px;
   max-width: 90vw;
   border: 1px solid #000;
@@ -64,6 +64,8 @@
 
 .game-title {
   margin: 1vh;
+  padding: 0 1rem;
+  border-bottom: 2px solid #000;
 }
 
 .game-instructions {
@@ -74,7 +76,8 @@
 
 .tenzies-completion-container {
   text-align: center;
-  margin: 10px 20px;
+  margin: 2vh auto 0;
+  padding: 0 5px;
 }
 
 .tenzies-results-container {
@@ -89,10 +92,21 @@
 }
 
 .reward-img {
-  width: 450px;
-  height: 250px;
-  object-fit: cover;
+  width: fit-content;
+  height: fit-content;
   max-width: 90vw;
   max-height: 70vh;
+  object-fit: cover;
   border-radius: 5px;
+  border: 3px solid var(--hoverColor);
+}
+
+.tenzies-links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 1vh;
+  width: 90vw;
+  max-width: 750px;
 }
