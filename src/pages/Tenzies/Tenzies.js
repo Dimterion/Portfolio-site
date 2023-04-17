@@ -206,7 +206,7 @@ function TenziesGame() {
         )}
         <div className="tenzies-links">
           <Link className="link other-link" to="/projects">
-            {">>> "}Projects page
+            Other projects
           </Link>
           <a
             className="link other-link"
@@ -214,7 +214,7 @@ function TenziesGame() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {">>> "}Additional info
+            Additional details
           </a>
         </div>
       </section>
