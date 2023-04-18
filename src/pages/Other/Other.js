@@ -22,6 +22,11 @@ function Other() {
       </Link>
       <br></br>
       <br></br>
+      <Link className="link other-link" to="/tenzies">
+        {">>> "}Dice Game
+      </Link>
+      <br></br>
+      <br></br>
       <Link className="link other-link" to="/projects">
         {">>> "}Projects page
       </Link>

@@ -35,10 +35,11 @@ function Projects() {
       <div className="misc-container">
         <h3>Misc.</h3>
         <p>
-          - A simple <Link to="/tasks">To Do App</Link> made in several versions
+          {">"}
+          <Link to="/tasks">To Do App</Link>
         </p>
         <p>
-          - A form to add text for the image {"=> "}
+          {">"}Images form{" =>"}
           <button className="toggleImg-btn" onClick={handleImgToggle}>
             {!imgActive ? "Open Form" : "Close Form"}
           </button>
@@ -53,18 +54,9 @@ function Projects() {
           </>
         )}
         <p>
-          - A carousel made with{" "}
-          <a
-            className="link"
-            href="https://beta.reactjs.org/learn/manipulating-the-dom-with-refs"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            useRef
-          </a>
-          {" => "}
+          {">"}Image slider{" =>"}
           <button className="toggleImg-btn" onClick={() => setOpenModal(true)}>
-            Open Carousel
+            Open Slider
           </button>
         </p>
         <Modal isOpen={openModal}>
@@ -75,12 +67,14 @@ function Projects() {
               setOpenModal(false);
             }}
           >
-            Close Carousel
+            Close Slider
           </button>
         </Modal>
         <div className="timerAndQuizButtons">
           <div className="timerAndQuiz-header">
-            <p>- Timer and Quiz {"=>"}</p>
+            <p>
+              {">"}Timer / Quiz {"=>"}
+            </p>
             <button className="tab-btn" onClick={() => toggleButtons()}>
               {!toggle ? "Timer & Quiz" : "Close"}
             </button>
@@ -105,10 +99,8 @@ function Projects() {
           </div>
         </div>
         <p>
-          - <Link to="/other">Examples</Link> outside of the React docs
-        </p>
-        <p>
-          - <Link to="/tenzies">Dice Game</Link>
+          {">"}
+          <Link to="/other">Other</Link>
         </p>
       </div>
     </div>

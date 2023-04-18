@@ -18,6 +18,12 @@
   color: #000;
 }
 
+.misc-container > p {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
 .misc-container > p > a:hover {
   color: var(--hoverColor);
 }
@@ -28,7 +34,7 @@
   border-radius: 5px;
   cursor: pointer;
   padding: 5px;
-  margin: 0;
+  margin: 0 5px;
   font-weight: bold;
   width: 120px;
 }
