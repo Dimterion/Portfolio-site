@@ -94,11 +94,17 @@
 .reward-img {
   width: fit-content;
   height: fit-content;
-  max-width: 90vw;
+  max-width: 700px;
   max-height: 70vh;
   object-fit: cover;
   border-radius: 5px;
   border: 3px solid var(--hoverColor);
+}
+
+@media only screen and (max-width: 700px) {
+  .reward-img {
+    max-width: 90vw;
+  }
 }
 
 .tenzies-links {

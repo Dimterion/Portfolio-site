@@ -13,7 +13,7 @@ export const projects = [
     technology: "React, MongoDB, Express, Node.js",
     completed: false,
     name: "Notes App",
-    demo: "https://notes-app-mbwb.onrender.com/",
+    demo: "https://notes-app-production-3eb2.up.railway.app/",
     repo: "https://github.com/Dimterion/Notes-app",
   },
   {
