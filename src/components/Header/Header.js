@@ -12,7 +12,7 @@ function Header() {
       <div>
         <h1>Dimterion's Projects & Studies</h1>
         <div className="date-container">
-          <span>Today is: {formatDate()}</span>
+          <span>{formatDate()}</span>
           <Clock />
           <NetworkCheck />
         </div>
