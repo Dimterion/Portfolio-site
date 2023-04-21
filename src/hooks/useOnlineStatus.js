@@ -1,6 +1,6 @@
 // ---> Custom hook usage
 // import { useState, useEffect } from "react";
-// <-- Custom hook usage
+// <--- Custom hook usage
 import { useSyncExternalStore } from "react";
 
 function subscribe(callback) {
@@ -36,7 +36,7 @@ export function useOnlineStatus() {
   // }, []);
 
   // return isOnline;
-  // <-- Custom hook usage
+  // <--- Custom hook usage
 
   // ---> Using useSyncExternalStore
   return useSyncExternalStore(

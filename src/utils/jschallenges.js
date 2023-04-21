@@ -1,3 +1,4 @@
+// Capitalizing even characters for the text
 export function capEveryOtherChar(text, setText) {
   let newText = "";
 
@@ -12,6 +13,7 @@ export function capEveryOtherChar(text, setText) {
   setText(newText);
 }
 
+// Removing duplicate characters from the text
 export function removeDup(text, setText) {
   let newText = text.split("");
 
@@ -22,6 +24,7 @@ export function removeDup(text, setText) {
   setText(newText.join(""));
 }
 
+// Capitalizing text & adding emoji and exclamation marks for it
 export function scream(text, setText) {
   setText(text.split(" ").join(" 😱 ").toUpperCase() + " !!!");
 }

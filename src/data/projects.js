@@ -218,7 +218,7 @@ export const projects = [
     demo: "",
     repo: "https://github.com/Dimterion/House-marketplace",
   },
-  // Scrimba projects
+  // Courses projects (Scrimba)
   {
     category: "Courses projects (Scrimba)",
     technology: "React",
@@ -235,7 +235,7 @@ export const projects = [
     demo: "https://dimterion.github.io/Projects-summary-page/",
     repo: "https://github.com/Dimterion/Projects-summary-page",
   },
-  // Codecademy projects
+  // Courses projects (Codecademy)
   {
     category: "Courses projects (Codecademy)",
     technology: "HTML, CSS ",
