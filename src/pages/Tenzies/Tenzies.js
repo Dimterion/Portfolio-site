@@ -214,7 +214,7 @@ function TenziesGame() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Additional details
+            Additional info
           </a>
         </div>
       </section>

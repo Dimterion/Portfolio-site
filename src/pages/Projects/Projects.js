@@ -46,10 +46,9 @@ function Projects() {
         </p>
         {imgActive && (
           <>
-            <p>
-              You can put some text for the image using the <b>Edit Text</b>{" "}
-              button below it.
-            </p>
+            <i>Add text for the image using the Edit Text button below.</i>
+            <br></br>
+            <br></br>
             <Form />
           </>
         )}

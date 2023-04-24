@@ -15,7 +15,7 @@ function Home() {
         <Link className="link" to="/projects">
           projects
         </Link>{" "}
-        & completed{" "}
+        and completed{" "}
         <Link className="link" to="/studies">
           courses
         </Link>{" "}
@@ -32,10 +32,9 @@ function Home() {
         >
           React Documentation
         </a>
-        . I wanted to check them "in action" and for that made various
-        components and inserted them throughout the pages. Thus, it's probably
-        more of a sandbox for me. If you want to check my main profile, it's
-        available{" "}
+        . I wanted to check them "in action" and made various components,
+        inserting them throughout the pages. Thus, it's probably more of a
+        sandbox for me. If you want to check my main profile, it's available{" "}
         <a
           className="link"
           href="https://dimterion.github.io/"

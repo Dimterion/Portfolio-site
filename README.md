@@ -10,7 +10,9 @@ This site is made to learn React using [official documentation](https://beta.rea
 
 Although it's called a Portfolio Site, I'm mostly using it to play around with some of the techniques / tools.
 
-Currently it consists of various blocks that I've inserted into its different parts, not focussing on the design aspect too much. I wanted to see how everything works together and simply organized it into something useful for myself.
+Currently it consists of various components that I've inserted into its different parts, not focussing on the design aspect too much. I wanted to see how everything works together and simply organized it into something useful for myself.
+
+From time to time I add other elements (not necessarily related to the React docs), using this repo as a sandbox.
 
 ## Built with
 
