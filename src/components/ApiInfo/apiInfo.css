@@ -24,14 +24,15 @@
   width: 500px;
   height: 30vh;
   object-fit: cover;
-  margin: 0 10px;
+  margin: 10px;
   border-radius: 5px;
+  filter: drop-shadow(5px 5px 5px #000) contrast(125%);
 }
 
 @media only screen and (max-width: 762px) {
   .apiInfo-img {
     width: 90vw;
     height: 20vh;
-    margin: 0 auto;
+    margin: 10px auto;
   }
 }

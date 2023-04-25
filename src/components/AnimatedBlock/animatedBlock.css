@@ -6,13 +6,13 @@
   padding: 5px;
   font-weight: bold;
   cursor: pointer;
-  border: 2px solid #000;
+  border: 1px solid #000;
   transition: 2s;
   width: 125px;
 }
 
 .funFacts-btn:hover {
-  box-shadow: 3px 3px 20px var(--hoverColor), 3px 2px 20px var(--hoverColor);
+  box-shadow: 2px 2px 20px var(--hoverColor), 2px 2px 20px var(--hoverColor);
   transition: 2s;
 }
 
@@ -27,14 +27,13 @@
   background-image: radial-gradient(
     circle,
     var(--tertiaryBackground) 0%,
-    var(--background) 100%
+    var(--secondaryBackground) 100%
   );
   width: 90vw;
   max-width: 1024px;
   margin: 10px auto;
   animation: fadeIn 1000ms;
   border-radius: 5px;
-  border: 1px solid #000;
   box-shadow: 2px 2px 2px #000;
 }
 
