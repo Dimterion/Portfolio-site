@@ -66,8 +66,6 @@ function DupFinder() {
         ))}
       </ul>
       <Link className="link other-link" to="/projects">
-        <br></br>
-        <br></br>
         {">>> "}Projects page
       </Link>
     </section>

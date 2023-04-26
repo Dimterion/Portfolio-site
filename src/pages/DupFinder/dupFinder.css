@@ -5,7 +5,8 @@
 }
 
 .dupFinder-container form {
-  max-width: 80vw;
+  width: 768px;
+  max-width: 90vw;
   display: flex;
   flex-flow: column nowrap;
   margin: auto;
@@ -18,12 +19,14 @@
   padding: 5px;
   font-size: 1rem;
   text-indent: 2px;
+  box-shadow: 2px 2px 2px #000;
 }
 
 .dupFinder-container ul {
   padding: 0;
   list-style: none;
   text-align: start;
+  margin-bottom: 3vh;
 }
 
 .dupFinder-container ul li {
@@ -37,7 +40,7 @@
 
 .dupFinder-container button {
   border-radius: 5px;
-  border: 1px solid #000;
+  border: 2px solid #000;
   margin: 15px auto;
   padding: 10px 20px;
   background-color: var(--tertiaryBackground);
@@ -47,4 +50,9 @@
 
 .dupFinder-container button:hover {
   scale: 0.9;
+}
+
+.dupFinder-container button:active {
+  scale: 0.8;
+  transition: 0.5s;
 }
