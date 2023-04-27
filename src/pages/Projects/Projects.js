@@ -39,7 +39,7 @@ function Projects() {
           <Link to="/tasks">To Do App</Link>
         </p>
         <p>
-          {">"}Images form{" =>"}
+          {">"}Picture form{" =>"}
           <button className="toggleImg-btn" onClick={handleImgToggle}>
             {!imgActive ? "Open Form" : "Close Form"}
           </button>

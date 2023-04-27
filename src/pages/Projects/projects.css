@@ -44,6 +44,10 @@
   transition: 0.5s ease-in-out;
 }
 
+.toggleImg-btn:active {
+  scale: 0.7;
+}
+
 .timerAndQuizButtons {
   display: flex;
   flex-flow: column wrap;

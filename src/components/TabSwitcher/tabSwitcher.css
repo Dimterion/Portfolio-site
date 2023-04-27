@@ -21,3 +21,7 @@
   background-color: var(--hoverColor);
   transition: 0.5s ease-in-out;
 }
+
+.tab-btn:active {
+  scale: 0.7;
+}
